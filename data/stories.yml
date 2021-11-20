@@ -37,3 +37,23 @@ stories:
   - action: utter_happy
   - intent: bot_challenge
   - action: utter_iamabot
+
+- story: provide_information_about_x86_negative
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: guide_information_year_x86
+  - action: utter_guide_information_year_x86
+  - action: utter_more_information
+  - intent: deny
+  - action: utter_goodbye
+
+- story: provide_information_about_x86_positive
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: guide_information_year_x86
+  - action: utter_guide_information_year_x86
+  - action: utter_more_information
+  - intent: affirm
+  - action: utter_happy

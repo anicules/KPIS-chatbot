@@ -11,3 +11,9 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Everytime someone asks about the year the x86 was built provide year
+  steps:
+  - intent: guide_information_year_x86
+  - action: utter_guide_information_year_x86
+  - action: utter_more_information

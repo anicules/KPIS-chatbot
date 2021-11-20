@@ -10,6 +10,8 @@ intents:
 - affirm
 - deny
 - mood_unhappy
+- guide_information_year_x86
+
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -24,7 +26,14 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  utter_guide_information_year_x86:
+  - text: It was built and designed during the 80s.
+  utter_more_information:
+  - text: Would you like more information?
+
 actions:
 - utter_greet
 - utter_happy
 - utter_iamabot
+- utter_guide_information_year_x86
+- utter_more_information

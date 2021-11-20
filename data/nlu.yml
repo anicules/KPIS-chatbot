@@ -94,4 +94,26 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
     - what are you?
-- intent: 
+
+- intent: opening_hours
+  examples: |
+  - when is the museum open?
+  - what are the opening hours of the museum?
+  - when can i visit the museum?
+  - what days is the museum open?
+  - between when and when is the museum open?
+  - is the museum closed on monday?
+  - is the museum closed on tuesday?
+  - is the museum closed on wednesday?
+  - is the musem closed on thursday?
+  - is the museum closed on friday?
+  - is the museum closed on saturday?
+  - is the museum closed on sunday?
+  - can i come later today?
+  - when can i visit today?
+  - can I visit today?
+
+- intent: guide_information_year_x86
+  examples: |
+    - when was the x86 created?
+    - what year was the x86 built?    
