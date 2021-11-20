@@ -79,6 +79,14 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+- intent: mood_suicide
+  examples: |
+    - i will kill myself
+    - i want to die
+    - i am going to kill myself
+    - i will jump off a bridge
+    - 
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -86,3 +94,4 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
     - what are you?
+- intent: 
