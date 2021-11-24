@@ -117,3 +117,23 @@ stories:
     - action: utter_more_information
     - intent: deny
     - action: utter_goodbye
+
+- story: provide information about becoming famous after death (positive)
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: VG_famous_death
+    - action: utter_VG_famous_death
+    - action: utter_more_information
+    - intent: affirm
+    - action: utter_happy
+
+- story: provide information about becoming famous after death (negative)
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: VG_famous_death
+    - action: utter_VG_famous_death
+    - action: utter_more_information
+    - intent: deny
+    - action: utter_goodbye
