@@ -11,6 +11,11 @@ intents:
 - deny
 - mood_unhappy
 - guide_information_year_x86
+- VG_cut_ear
+- VG_potato_eaters
+- VG_yellow
+- VG_famous_death
+- VG_suicide
 
 responses:
   utter_greet:
