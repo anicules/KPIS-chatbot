@@ -57,3 +57,23 @@ stories:
   - action: utter_more_information
   - intent: affirm
   - action: utter_happy
+
+- story: provide information about Van Gogh's ear (positive)
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: VG_cut_ear
+    - action: utter_VG_cut_ear
+    - action: utter_more_information
+    - intent: affirm
+    - action: utter_happy
+
+- story: provide information about Van Gogh's ear (negative)
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: VG_cut_ear
+    - action: utter_VG_cut_ear
+    - action: utter_more_information
+    - intent: deny
+    - action: utter_goodbye
