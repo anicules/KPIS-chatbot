@@ -87,7 +87,9 @@ nlu:
     - i want to die
     - i am going to kill myself
     - i will jump off a bridge
-    - 
+    - I am not good
+    - I am bad
+    - Not good
 
 - intent: bot_challenge
   examples: |
@@ -114,8 +116,46 @@ nlu:
   - can i come later today?
   - when can i visit today?
   - can I visit today?
+  - Working hours?
 
 - intent: guide_information_year_x86
   examples: |
     - when was the x86 created?
-    - what year was the x86 built?    
+    - what year was the x86 built? 
+
+- intent: VG_cut_ear
+  examples: |
+    - Why Did Vincent van Gogh Cut off His Ear?
+    - The reason Van Gogh cut off his ear?
+
+- intent: VG_potato_eaters
+  examples: |
+    - tell me about potato eaters
+    - Why did he decide paint potato eater?
+    - Why are figures sitting down in potato eaters?
+    - Who were potao eaters?
+    - How long did it take to paint potato eaters?
+    - Was he pleased with poato eaters?
+
+- intent: VG_yellow
+  examples: |
+    - Why is yellow so prominent in Van Gogh's paintings?
+    - Is yellow the most used color in Van Gogh's painting?
+    - What is the most used color in Van Gogh's painting?
+    - Van Gogh's famouse works in yellow?
+    - Was yellow Van Gogh's favorite color?
+
+- intent: VG_famous_death
+  examples: |
+    - How Did Vincent van Gogh Become Famous after His Death?
+    - When did Van Gogh become famous?
+    - Why did Van Gogh become famouse after his death?
+    - Who did make Van Gogh faous after his death?
+    - Was Van Gogh famous before his death?
+    - Was Van Gogh famous when he was alive?
+
+- intent: VG_suicide
+  exaples: |
+    - Why Did Vincent van Gogh Commit Suicide?
+    - Does Van Gogh commit suicide?
+    - Why did Van Gogh try to kill himself?  
