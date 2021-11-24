@@ -97,3 +97,23 @@ stories:
     - action: utter_more_information
     - intent: deny
     - action: utter_goodbye
+
+- story: provide information about yellow color in Van Gogh's paintings (positive)
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: VG_yellow
+    - action: utter_VG_yellow
+    - action: utter_more_information
+    - intent: affirm
+    - action: utter_happy
+
+- story: provide information about yellow color in Van Gogh's paintings (negative)
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: VG_yellow
+    - action: utter_VG_yellow
+    - action: utter_more_information
+    - intent: deny
+    - action: utter_goodbye
