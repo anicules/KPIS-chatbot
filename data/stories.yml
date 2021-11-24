@@ -77,3 +77,23 @@ stories:
     - action: utter_more_information
     - intent: deny
     - action: utter_goodbye
+
+- story: provide information about Van Gogh's painting potato eaters (positive)
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: VG_potato_eaters
+    - action: utter_VG_potato_eaters
+    - action: utter_more_information
+    - intent: affirm
+    - action: utter_happy
+
+- story: provide information about Van Gogh's painting potato eaters (negative)
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: VG_potato_eaters
+    - action: utter_VG_potato_eaters
+    - action: utter_more_information
+    - intent: deny
+    - action: utter_goodbye
