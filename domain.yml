@@ -35,6 +35,26 @@ responses:
   - text: It was built and designed during the 80s.
   utter_more_information:
   - text: Would you like more information?
+  utter_VG_cut_ear:
+  - Vincent van Gogh cut off his left ear when tempers flared with Paul Gauguin, the artist with whom he had been working for a while in Arles.
+Van Gogh’s illness revealed itself. He began to hallucinate and suffered attacks in which he lost consciousness. During one of these attacks, he used the knife. He could later recall nothing about the event.
+  utter_VG_potato_eaters:
+    - text: With a large work featuring multiple figures, Vincent van Gogh hoped to prove himself to the outside world – after nearly two years as an artist, he felt the time had come. The subject, a peasant family eating their daily meal, was popular at the time. He had little experience of full-length portraits, so decided to paint the figures sitting down.
+Vincent spent months practising painting heads, and The Potato Eaters was preceded by dozens of preparatory studies. He was pleased with the final work, but it drew severe criticism from his brother Theo and artist friend Anthon van Rappard.
+  utter_VG_yellow:
+    - text: Vincent van Gogh painted what were destined to become his most famous works in sun-drenched Arles. Sunflowers, The Bedroom, The Yellow House and the sweeping landscapes with wheat fields, sowers and reapers under the shimmering sun.
+That’s what you associate with Van Gogh, what gets etched in your memory – all that yellow, used to portray the southern light and way of life.
+But Van Gogh naturally used plenty of other colours. Consider the paintings from his Dutch period, where he primarily used browns, greys and greens. Or his Parisian works, where his palette became noticeably lighter and brighter.
+  utter_VG_famous_death:
+    - text: In the final two years of his life, Vincent had gained recognition amongst the avant-garde and his work had been displayed in exhibitions in Paris and Brussels. After Vincent’s death, his brother Theo wanted nothing more than to raise the profile of his brother’s work. But just six months later, Theo also passed away.
+His widow, Jo van Gogh-Bonger, set about completing the task. She sold some of Vincent’s works, loaned others out for exhibitions and – also very importantly – published his letters to Theo. Van Gogh’s fascinating life story is one of the reasons why his work gradually took the whole world by storm. Without Jo’s dedication, this would never have been possible.
+  utter_VG_suicide:
+    - text: After his admission to the institution in Saint-Rémy, Vincent often mentions death in his letters. His ambition and faith in his own health gradually also starts to wane. Vincent is petrified that the attacks he suffered will return.
+Conversely, his brother is bursting with ambition. Theo was married, had recently become a father and was planning on starting his own art dealership. Vincent was still completely financially dependent on Theo, and perhaps felt like a millstone around his brother’s neck. Or perhaps he was worried that Theo would not be able to continue to send him sufficient funding in the future.
+We’ll probably never know the exact reason for sure.
+
+
+
 
 actions:
 - utter_greet
