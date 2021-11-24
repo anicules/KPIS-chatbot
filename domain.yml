@@ -62,3 +62,8 @@ actions:
 - utter_iamabot
 - utter_guide_information_year_x86
 - utter_more_information
+- utter_VG_cut_ear
+- utter_VG_potato_eaters
+- utter_VG_yellow
+- utter_VG_famous_death
+- utter_VG_suicide
