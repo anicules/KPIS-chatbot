@@ -162,4 +162,23 @@ nlu:
 
 - intent: comp_exh_first_mouse
   examples: |
-    - 
+    - tell me about the mouse
+    - information first mouse
+    - first computer mouse
+    - when was the first computer mouse created?
+    - what year was the first mouse built?
+    - year first mouse
+    - patent filed first computer mouse
+    - original mouse
+    - name original mouse
+    - what is Douglas Engelbart best known for?
+
+- intent: comp_exh_first_Engelbart
+  examples: |
+    - who created the first mouse?
+    - who is the creator of the first mouse?
+    - who built the first mouse?
+    - who is Douglas Engelbart
+    - Douglas Engelbart information
+    - Engelbart author first mouse
+    - did Douglas Engelbart create the first mouse?
