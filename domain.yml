@@ -31,10 +31,9 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
-  utter_guide_information_year_x86:
-  - text: It was built and designed during the 80s.
   utter_more_information:
   - text: Would you like more information?
+
   utter_VG_cut_ear:
   - Vincent van Gogh cut off his left ear when tempers flared with Paul Gauguin, the artist with whom he had been working for a while in Arles.
 Van Gogh’s illness revealed itself. He began to hallucinate and suffered attacks in which he lost consciousness. During one of these attacks, he used the knife. He could later recall nothing about the event.

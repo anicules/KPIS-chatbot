@@ -155,7 +155,11 @@ nlu:
     - Was Van Gogh famous when he was alive?
 
 - intent: VG_suicide
-  exaples: |
+  examples: |
     - Why Did Vincent van Gogh Commit Suicide?
     - Does Van Gogh commit suicide?
     - Why did Van Gogh try to kill himself?  
+
+- intent: comp_exh_first_mouse
+  examples: |
+    - 
