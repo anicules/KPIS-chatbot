@@ -172,8 +172,11 @@ nlu:
     - original mouse
     - name original mouse
     - what is Douglas Engelbart best known for?
+    - was the first computer mouse built in germany?
+    - did the germans develop the first mouse ever?
+    - 
 
-- intent: comp_exh_first_Engelbart
+- intent: comp_exh_first_mouse_Engelbart
   examples: |
     - who created the first mouse?
     - who is the creator of the first mouse?
@@ -182,3 +185,19 @@ nlu:
     - Douglas Engelbart information
     - Engelbart author first mouse
     - did Douglas Engelbart create the first mouse?
+
+- intent: comp_exh_first_german_mouse
+  examples: |
+    - 
+
+- intent: comp_exh_xerox_alto
+  examples: |
+    -
+
+- intent: comp_exh_apple_macintosh
+  examples: |
+    -
+
+- intent: comp_exh_intel_8086
+  examples: |
+    - 

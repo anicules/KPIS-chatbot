@@ -52,17 +52,29 @@ His widow, Jo van Gogh-Bonger, set about completing the task. She sold some of V
 Conversely, his brother is bursting with ambition. Theo was married, had recently become a father and was planning on starting his own art dealership. Vincent was still completely financially dependent on Theo, and perhaps felt like a millstone around his brother’s neck. Or perhaps he was worried that Theo would not be able to continue to send him sufficient funding in the future.
 We’ll probably never know the exact reason for sure.
 
+  utter_comp_exh_first_mouse:
+    - text: The first computer mouse was developed by Douglas Engelbart in the 1960s while he was exploring possible interaction methods between humans and computers. 
+      image: https://www.sri.com/wp-content/uploads/2019/08/mouse.jpg
 
+  utter_comp_exh_first_mouse_Engelbart:
+    - text:
 
+  utter_comp_exh_first_german_mouse:
+    - text:
 
 actions:
 - utter_greet
 - utter_happy
 - utter_iamabot
-- utter_guide_information_year_x86
 - utter_more_information
 - utter_VG_cut_ear
 - utter_VG_potato_eaters
 - utter_VG_yellow
 - utter_VG_famous_death
 - utter_VG_suicide
+- utter_comp_exh_first_mouse
+- utter_comp_exh_first_mouse_Engelbart
+
+# Sources
+# utter_comp_exh_first_mouse: https://www.sri.com/hoi/computer-mouse-and-interactive-computing/ and https://en.wikipedia.org/wiki/Computer_mouse#History 
+# 
