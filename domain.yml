@@ -67,17 +67,15 @@ responses:
   - text: The Apple Macintosh was released in 1984 and set a new standard for personal computers. 
     image: https://www.mac-history.net/wp-content/uploads/2011/01/retouchphoto_apple_macintosh_1984_high_res_clean1.jpg 
 
-  utter_comp_exh_intel_8086:
-  - text: 
-
   utter_comp_exh_ibm_pc:
-  - text:
+  - text: The IBM Personal Computer (on display is the model 5150, generally known as the IBM PC) is the first computer of the IBM PC model line and was released in 1981. The main idea was to develop a computer based on an open architecture. This meant that any other company could produce peripherals, expansion cards and software compatible with the IBM PC. Within a few months after its introduction, the IBM PC would become the most successful personal computer (surpassing the immensly popular Apple 2). Within 3 years, the IBM PC would be sold over 2 million times.
 
 actions:
 - utter_greet
 - utter_happy
 - utter_iamabot
 - utter_more_information
+- utter_exh_info
 - utter_VG_cut_ear
 - utter_VG_potato_eaters
 - utter_VG_yellow
@@ -91,6 +89,5 @@ actions:
 # utter_comp_exh_first_mouse: https://www.sri.com/hoi/computer-mouse-and-interactive-computing/ and https://en.wikipedia.org/wiki/Computer_mouse#History 
 # utter_comp_exh_first_mouse_Engelbart: https://en.wikipedia.org/wiki/Douglas_Engelbart 
 # utter_comp_exh_xerox_alto: https://www.computerhistory.org/revolution/input-output/14/347 and https://en.wikipedia.org/wiki/Xerox_Alto and https://history-computer.com/xerox-alto-complete-history-of-the-xerox-alto-computer/ 
-# utter_comp_exh_apple_macintosh: https://www.mac-history.net/featured-2/2021-02-10/the-history-of-the-apple-macintosh and 
-# utter_comp_exh_intel_8086:
-# utter_comp_exh_ibm_pc:
+# utter_comp_exh_apple_macintosh: https://www.mac-history.net/featured-2/2021-02-10/the-history-of-the-apple-macintosh and https://en.wikipedia.org/wiki/Macintosh_128K 
+# utter_comp_exh_ibm_pc:https://en.wikipedia.org/wiki/IBM_Personal_Computer and https://www.ibm.com/ibm/history/ibm100/us/en/icons/personalcomputer/ 
