@@ -101,24 +101,24 @@ nlu:
 
 - intent: opening_hours
   examples: |
-  - when is the museum open?
-  - what are the opening hours of the museum?
-  - when can i visit the museum?
-  - what days is the museum open?
-  - between when and when is the museum open?
-  - is the museum closed on monday?
-  - is the museum closed on tuesday?
-  - is the museum closed on wednesday?
-  - is the musem closed on thursday?
-  - is the museum closed on friday?
-  - is the museum closed on saturday?
-  - is the museum closed on sunday?
-  - can i come later today?
-  - when can i visit today?
-  - can I visit today?
-  - Working hours?
+    - when is the museum open?
+    - what are the opening hours of the museum?
+    - when can i visit the museum?
+    - what days is the museum open?
+    - between when and when is the museum open?
+    - is the museum closed on monday?
+    - is the museum closed on tuesday?
+    - is the museum closed on wednesday?
+    - is the musem closed on thursday?
+    - is the museum closed on friday?
+    - is the museum closed on saturday?
+    - is the museum closed on sunday?
+    - can i come later today?
+    - when can i visit today?
+    - can I visit today?
+    - Working hours?
 
-- intent: guide_information_year_x86
+- intent: exh_info
   examples: |
     - when was the x86 created?
     - what year was the x86 built? 
@@ -157,7 +157,7 @@ nlu:
 - intent: VG_suicide
   examples: |
     - Why Did Vincent van Gogh Commit Suicide?
-    - Does Van Gogh commit suicide?
+    - Did Van Gogh commit suicide?
     - Why did Van Gogh try to kill himself?  
 
 - intent: comp_exh_first_mouse
@@ -207,10 +207,31 @@ nlu:
   examples: |
     -
 
-- intent: comp_exh_intel_8086
-  examples: |
-    - 
-
 - intent: comp_exh_ibm_pc
   examples: |
-    - 
+    - ibm pc
+    - where does the term pc come from?
+    - did IBM create the first PC?
+    - Was the first PC from IBM?
+    - what was so special about the ibm pc?
+    - what was the secret of ibm?
+    - when did ibm release the ibm pc?
+    - tell me about the ibm pc
+    - how did ibm revolutionize the computing industry?
+    - why is the ibm pc the father of all modern pcs?
+
+- intent: what_happened_to_ibm_pc_business
+  examples: |
+    - what happened to ibm?
+    - ibm company
+    - does ibm still sell pcs?
+    - why arent there any ibm computer on the market today?
+    - can I buy an IBM pc today?
+    - who owns ibm?
+    - did lenovo purchase ibm?
+    - thinkpad
+    - ibm thinkpad
+    - ibm failure
+    - did ibm go bankrupt?
+    - is ibm bankrupt?
+    - ibm bankrupcy
