@@ -34,33 +34,44 @@ responses:
   utter_more_information:
   - text: Would you like more information?
 
+  utter_exh_info:
+  - text: 
+
   utter_VG_cut_ear:
-  - Vincent van Gogh cut off his left ear when tempers flared with Paul Gauguin, the artist with whom he had been working for a while in Arles.
-Van Gogh’s illness revealed itself. He began to hallucinate and suffered attacks in which he lost consciousness. During one of these attacks, he used the knife. He could later recall nothing about the event.
+  - Vincent van Gogh cut off his left ear when tempers flared with Paul Gauguin, the artist with whom he had been working for a while in Arles. Van Gogh’s illness revealed itself. He began to hallucinate and suffered attacks in which he lost consciousness. During one of these attacks, he used the knife. He could later recall nothing about the event.
+
   utter_VG_potato_eaters:
-    - text: With a large work featuring multiple figures, Vincent van Gogh hoped to prove himself to the outside world – after nearly two years as an artist, he felt the time had come. The subject, a peasant family eating their daily meal, was popular at the time. He had little experience of full-length portraits, so decided to paint the figures sitting down.
-Vincent spent months practising painting heads, and The Potato Eaters was preceded by dozens of preparatory studies. He was pleased with the final work, but it drew severe criticism from his brother Theo and artist friend Anthon van Rappard.
+  - text: With a large work featuring multiple figures, Vincent van Gogh hoped to prove himself to the outside world – after nearly two years as an artist, he felt the time had come. The subject, a peasant family eating their daily meal, was popular at the time. He had little experience of full-length portraits, so decided to paint the figures sitting down. Vincent spent months practising painting heads, and The Potato Eaters was preceded by dozens of preparatory studies. He was pleased with the final work, but it drew severe criticism from his brother Theo and artist friend Anthon van Rappard.
+  
   utter_VG_yellow:
-    - text: Vincent van Gogh painted what were destined to become his most famous works in sun-drenched Arles. Sunflowers, The Bedroom, The Yellow House and the sweeping landscapes with wheat fields, sowers and reapers under the shimmering sun.
-That’s what you associate with Van Gogh, what gets etched in your memory – all that yellow, used to portray the southern light and way of life.
-But Van Gogh naturally used plenty of other colours. Consider the paintings from his Dutch period, where he primarily used browns, greys and greens. Or his Parisian works, where his palette became noticeably lighter and brighter.
+  - text: Vincent van Gogh painted what were destined to become his most famous works in sun-drenched Arles. Sunflowers, The Bedroom, The Yellow House and the sweeping landscapes with wheat fields, sowers and reapers under the shimmering sun. That’s what you associate with Van Gogh, what gets etched in your memory – all that yellow, used to portray the southern light and way of life. But Van Gogh naturally used plenty of other colours. Consider the paintings from his Dutch period, where he primarily used browns, greys and greens. Or his Parisian works, where his palette became noticeably lighter and brighter.
+
   utter_VG_famous_death:
-    - text: In the final two years of his life, Vincent had gained recognition amongst the avant-garde and his work had been displayed in exhibitions in Paris and Brussels. After Vincent’s death, his brother Theo wanted nothing more than to raise the profile of his brother’s work. But just six months later, Theo also passed away.
-His widow, Jo van Gogh-Bonger, set about completing the task. She sold some of Vincent’s works, loaned others out for exhibitions and – also very importantly – published his letters to Theo. Van Gogh’s fascinating life story is one of the reasons why his work gradually took the whole world by storm. Without Jo’s dedication, this would never have been possible.
+  - text: In the final two years of his life, Vincent had gained recognition amongst the avant-garde and his work had been displayed in exhibitions in Paris and Brussels. After Vincent’s death, his brother Theo wanted nothing more than to raise the profile of his brother’s work. But just six months later, Theo also passed away. His widow, Jo van Gogh-Bonger, set about completing the task. She sold some of Vincent’s works, loaned others out for exhibitions and – also very importantly – published his letters to Theo. Van Gogh’s fascinating life story is one of the reasons why his work gradually took the whole world by storm. Without Jo’s dedication, this would never have been possible.
+
   utter_VG_suicide:
-    - text: After his admission to the institution in Saint-Rémy, Vincent often mentions death in his letters. His ambition and faith in his own health gradually also starts to wane. Vincent is petrified that the attacks he suffered will return.
-Conversely, his brother is bursting with ambition. Theo was married, had recently become a father and was planning on starting his own art dealership. Vincent was still completely financially dependent on Theo, and perhaps felt like a millstone around his brother’s neck. Or perhaps he was worried that Theo would not be able to continue to send him sufficient funding in the future.
-We’ll probably never know the exact reason for sure.
+  - text: After his admission to the institution in Saint-Rémy, Vincent often mentions death in his letters. His ambition and faith in his own health gradually also starts to wane. Vincent is petrified that the attacks he suffered will return. Conversely, his brother is bursting with ambition. Theo was married, had recently become a father and was planning on starting his own art dealership. Vincent was still completely financially dependent on Theo, and perhaps felt like a millstone around his brother’s neck. Or perhaps he was worried that Theo would not be able to continue to send him sufficient funding in the future. We’ll probably never know the exact reason for sure.
 
   utter_comp_exh_first_mouse:
-    - text: The first computer mouse was developed by Douglas Engelbart in the 1960s while he was exploring possible interaction methods between humans and computers. 
+  - text: The first computer mouse was developed by Douglas Engelbart in the 1960s while he was exploring possible interaction methods between humans and computers. Engelbart was looking for a way of inputting X- and Y-coordnate data. Engelbart made some first notes about a device called a "bug" during 1963, This "bug" would be easy and natural to use compared to a stylus pen. The first mouse prototype was demonstrated at a conference (later called "The Mother of all Demos") 5 years later (in 1968). It was called mouse because of the cable that was attached to it. This mouse used two potentioneters perpendicular to each other and connected to wheels. The rotation of each wheel would be transmitted as motion along one axis.
       image: https://www.sri.com/wp-content/uploads/2019/08/mouse.jpg
 
   utter_comp_exh_first_mouse_Engelbart:
-    - text:
+  - text: Douglas Carl Engelbart (January 30, 1925 – July 2, 2013) was an engineer and inventor, and an early computer and Internet pioneer. He is best known for his work on founding the field of human–computer interaction, particularly while at his Augmentation Research Center Lab in SRI International, which resulted in creation of the computer mouse, and the development of hypertext, networked computers, and precursors to graphical user interfaces. Engelbart's law, the observation that the intrinsic rate of human performance is exponential, is named after him. NLS, the "oN-Line System," developed by the Augmentation Research Center under Engelbart's guidance with funding primarily from ARPA (as DARPA was then known), demonstrated numerous technologies, most of which are now in widespread use; it included the computer mouse, bitmapped screens, hypertext; all of which were displayed at "The Mother of All Demos" in 1968. The lab was transferred from SRI to McDonnell Douglas in 1984, and NLS was renamed Augment (now the Doug Engelbart Institute). At McDonnell Douglas, Engelbart was limited by a lack of interest in his ideas and funding to pursue them, and retired in 1986. In 1988, Engelbart and his daughter Christina launched the Bootstrap Institute – later known as The Doug Engelbart Institute – to promote his vision, especially at Stanford University; this effort did result in some DARPA funding to modernize the user interface of Augment. In December 2000, United States President Bill Clinton awarded Engelbart the National Medal of Technology, the U.S.'s highest technology award. In December 2008, Engelbart was honored by SRI at the 40th anniversary of the "Mother of All Demos".
 
-  utter_comp_exh_first_german_mouse:
-    - text:
+  utter_comp_exh_xerox_alto:
+  - text: The Xerox Alto is the first computer that was designed with an operating system based on a GUI, much like modern computers. The designers found their inspiration in the NLS developed by Douglas Engelbart. The first Xerox Alto PCs became available during 1973, about a decade before any other PC started using GUI operating systems. The Alto consisted of a cabinet, a 606x808 pixel CRT display (this display had the exact size of a sheet of paper), a 3-button mouse and a keyboard. It was meant to be available to consumers, but the high price led to limited sales. About 1000 Altos were used at the Xerox facilities, while 500 other units were used at universities. In total about 2000 Xerox Alto personal computers were built. Despite having a weak impact on the consumer PC market, the Alto paved the way for the modern computers. People didn't need to be computer specialists in order to use them, the need to understand the technical details of the system was diminished and the focus was now on the task itself.
+    image: http://images.computerhistory.org/revonline/images/102626737p-03-02.jpg?w=600 
+
+  utter_comp_exh_apple_macintosh:
+  - text: The Apple Macintosh was released in 1984 and set a new standard for personal computers. 
+    image: https://www.mac-history.net/wp-content/uploads/2011/01/retouchphoto_apple_macintosh_1984_high_res_clean1.jpg 
+
+  utter_comp_exh_intel_8086:
+  - text: 
+
+  utter_comp_exh_ibm_pc:
+  - text:
 
 actions:
 - utter_greet
@@ -74,7 +85,12 @@ actions:
 - utter_VG_suicide
 - utter_comp_exh_first_mouse
 - utter_comp_exh_first_mouse_Engelbart
+- utter_comp_exh_xerox_alto
 
 # Sources
 # utter_comp_exh_first_mouse: https://www.sri.com/hoi/computer-mouse-and-interactive-computing/ and https://en.wikipedia.org/wiki/Computer_mouse#History 
-# 
+# utter_comp_exh_first_mouse_Engelbart: https://en.wikipedia.org/wiki/Douglas_Engelbart 
+# utter_comp_exh_xerox_alto: https://www.computerhistory.org/revolution/input-output/14/347 and https://en.wikipedia.org/wiki/Xerox_Alto and https://history-computer.com/xerox-alto-complete-history-of-the-xerox-alto-computer/ 
+# utter_comp_exh_apple_macintosh: https://www.mac-history.net/featured-2/2021-02-10/the-history-of-the-apple-macintosh and 
+# utter_comp_exh_intel_8086:
+# utter_comp_exh_ibm_pc:

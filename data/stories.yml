@@ -157,3 +157,10 @@ stories:
   - action: utter_more_information
   - intent: deny
   - action: utter_goodbye
+
+- story: provide information about the special exhibition
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: exh_info
+  - action: 
