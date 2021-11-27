@@ -35,7 +35,7 @@ responses:
   - text: Would you like more information?
 
   utter_exh_info:
-  - text: 
+  - text: We have a special exhibition going on the moment. The exhibition is called "History of Personal Computing" and will be opened to the public free of charge between November 15 and February 1st during the normal museum opeing hours. Have fun!
 
   utter_VG_cut_ear:
   - Vincent van Gogh cut off his left ear when tempers flared with Paul Gauguin, the artist with whom he had been working for a while in Arles. Van Gogh’s illness revealed itself. He began to hallucinate and suffered attacks in which he lost consciousness. During one of these attacks, he used the knife. He could later recall nothing about the event.
