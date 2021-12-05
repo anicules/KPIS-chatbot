@@ -10,6 +10,8 @@ intents:
 - affirm
 - deny
 - mood_unhappy
+- mood_suicide
+- thanks
 - VG_cut_ear
 - VG_potato_eaters
 - VG_yellow
@@ -38,6 +40,8 @@ responses:
   - text: I am a bot, powered by Rasa.
   utter_more_information:
   - text: Would you like more information?
+  utter_thanks:
+  - text: Glad I could help.
 
   utter_exh_info:
   - text: We have a special exhibition going on the moment. The exhibition is called "History of Personal Computing" and will be opened to the public free of charge between November 15 and February 1st during the normal museum opeing hours. Have fun!

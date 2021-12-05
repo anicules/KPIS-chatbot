@@ -99,6 +99,17 @@ nlu:
     - am I talking to a human?
     - what are you?
 
+- intent: thanks
+  examples: |
+    - Thank you
+    - Thanks
+    - That helped
+    - Thank you for your help
+    - that was helpful
+    - you were helpful
+    - that information was good
+    - thanks for the information
+
 - intent: opening_hours
   examples: |
     - when is the museum open?
