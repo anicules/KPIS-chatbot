@@ -261,3 +261,11 @@ nlu:
     - first painting
     - How Van Gogh did sell his paintings?
     - Who was the first one that bought Van Goghs painting?
+
+- intent: VG_hand
+  examples: |
+    - Was Van Gogh left or right-handed?
+    - Was Van Gogh right-handed?
+    - Was Van Gogh left-handed?
+    - How do you know that he was right-handed?
+    - Why was Van Gogh right-handed?
