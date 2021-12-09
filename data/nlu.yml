@@ -247,11 +247,17 @@ nlu:
     - is ibm bankrupt?
     - ibm bankrupcy
 
-- intent: Van Gogh’s Biggest Secret VG_secret
-examples: |
-    - What Was Van Gogh’s Biggest Secret?
+- intent: VG_secret
+  examples: |
+    - What Was Van Goghs Biggest Secret?
     - his biggest secret
     - Van Gogh’s Biggest Secret
     - Does Van Gogh a secret?
     - To whom did Van Gogh tell his secrets?
  
+- intent: VG_painting_qty
+  examples: |
+    - How Many Paintings Did Vincent Sell during His Lifetime?
+    - first painting
+    - How Van Gogh did sell his paintings?
+    - Who was the first one that bought Van Goghs painting?
