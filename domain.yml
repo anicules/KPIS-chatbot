@@ -96,6 +96,10 @@ Van Gogh often traded work with other artists – in his younger years, often in
   utter_VG_hand:
     - text: 'Van Gogh was right-handed. We are almost certain of this, because in two self-portraits, he''s pictured with the pallet in his right hand. But because he painted himself using a mirror, you need to flip that image. Vincent is therefore actually holding the pallet with his left hand, and his brush in his right.'
 
+  utter_VG_Theo_death:
+    - text: 'Theo had always been sickly and prone to ailments, but after Vincent''s death, his health deteriorated extremely rapidly indeed. He was admitted to hospital in mid-October 1890 and on 25 January 1891 – six months after Vincent''s death, he died of the effects of syphilis.
+Theo suffered from this illness for a long time. Back then, it was a common STD (bacterial infection) and a treatment was yet to be developed. Sufferers can be infected with syphilis for many years without knowing it, but the disease ultimately attacks various organs, including the heart, brain and spinal cord.'
+
 
 actions:
 - utter_greet
