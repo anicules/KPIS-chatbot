@@ -82,6 +82,13 @@ responses:
   utter_what_happened_to_ibm_pc_business:
   - text: Over time IBM developed new desktop, then laptop computers. One of the best-known laptop series would be the IBM ThinkPad-series. 24 years after revolutionizing the computer industry, in 2005, and due to financial trouble, IBM sold its PC division to Lenovo, which still sells laptops under the ThinkPad branding. IBM continues to exist, the company mainly produces server and cloud computing solutions.
 
+  utter_VG_secret:
+  - text: 'If you read Vincent’s letters, he doesn''t come across as a man who had big secrets. He was generally open in his correspondence with Theo, although it sometimes took him a while to report his latest news. He waited to tell Theo about his relationship with prostitute Sien Hoornik in The Hague. She was pregnant and had a daughter when Vincent met her.
+Vincent expressed any grievances he had, and vented how he felt about what was keeping him busy. In 1877, he wrote in a letter to Theo:
+''Thanks for coming here yesterday, and do let''s carry on having as few secrets as possible. We''re brothers, after all''.
+It would’ve naturally been quite a scoop to discover that Van Gogh had fathered 16 children on the sly, but we''re yet to find any such skeletons in his cupboard.'
+
+
 actions:
 - utter_greet
 - utter_happy
