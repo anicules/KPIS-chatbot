@@ -88,6 +88,12 @@ Vincent expressed any grievances he had, and vented how he felt about what was k
 ''Thanks for coming here yesterday, and do let''s carry on having as few secrets as possible. We''re brothers, after all''.
 It would’ve naturally been quite a scoop to discover that Van Gogh had fathered 16 children on the sly, but we''re yet to find any such skeletons in his cupboard.'
 
+  utter_VG_painting_qty:
+    - text: 'We don''t know exactly how many paintings Van Gogh sold during this lifetime, but in any case, it was more than a couple. Vincent''s first commission was from his uncle Cor. He was an art dealer and wanted to help his nephew on his way, so he ordered 19 cityscapes of The Hague.
+Vincent sold his first painting to the Parisian paint and art dealer Julien Tanguy, and his brother Theo successfully sold another work to a gallery in London. The Red Vineyard, which Vincent painted in 1888, was bought by Anna Boch, the sister of Vincent''s friend Eugène Boch.
+Van Gogh often traded work with other artists – in his younger years, often in exchange for some food or drawing and painting supplies. In this sense, Vincent actually ''sold'' quite a lot of work during his lifetime.'
+
+
 
 actions:
 - utter_greet
