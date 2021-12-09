@@ -123,6 +123,11 @@ actions:
 - utter_what_happened_to_ibm_pc_business
 - utter_comp_exh_ibm_pc
 - utter_comp_exh_apple_macintosh
+- utter_VG_secret
+- utter_VG_painting_qty
+- utter_VG_hand
+- utter_VG_Theo_death
+- utter_VG_friends
 
 # Sources
 # utter_comp_exh_first_mouse: https://www.sri.com/hoi/computer-mouse-and-interactive-computing/ and https://en.wikipedia.org/wiki/Computer_mouse#History 
