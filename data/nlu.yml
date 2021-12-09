@@ -269,3 +269,13 @@ nlu:
     - Was Van Gogh left-handed?
     - How do you know that he was right-handed?
     - Why was Van Gogh right-handed?
+
+- intent: VG_Theo_death
+  examples: |
+    - Why Did Theo Die So Soon after Vincent?
+    - Why did Van Goghs brother die?
+    - When did his brother die?
+    - When did Theo die?
+    - Why did his brother die?
+    - Was Theo ill?
+    - What was Theos illness?
