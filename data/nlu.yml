@@ -279,3 +279,10 @@ nlu:
     - Why did his brother die?
     - Was Theo ill?
     - What was Theos illness?
+
+- intent: VG_friends
+  examples: |
+    - Who Were Van Goghs Best Friends?
+    - Did he have any friend?
+    - Who were Van Goghs friends?
+    - How many friends did Van Gogh have?
