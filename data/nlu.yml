@@ -246,3 +246,12 @@ nlu:
     - did ibm go bankrupt?
     - is ibm bankrupt?
     - ibm bankrupcy
+
+- intent: Van Gogh’s Biggest Secret VG_secret
+examples: |
+    - What Was Van Gogh’s Biggest Secret?
+    - his biggest secret
+    - Van Gogh’s Biggest Secret
+    - Does Van Gogh a secret?
+    - To whom did Van Gogh tell his secrets?
+ 
