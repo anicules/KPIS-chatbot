@@ -99,6 +99,11 @@ Van Gogh often traded work with other artists – in his younger years, often in
   utter_VG_Theo_death:
     - text: 'Theo had always been sickly and prone to ailments, but after Vincent''s death, his health deteriorated extremely rapidly indeed. He was admitted to hospital in mid-October 1890 and on 25 January 1891 – six months after Vincent''s death, he died of the effects of syphilis.
 Theo suffered from this illness for a long time. Back then, it was a common STD (bacterial infection) and a treatment was yet to be developed. Sufferers can be infected with syphilis for many years without knowing it, but the disease ultimately attacks various organs, including the heart, brain and spinal cord.'
+  utter_VG_friends:
+    - text: '''If I didn''t have Theo it wouldn''t be possible for me to do justice to my work, but because I have him as a friend I believe that I''ll make more progress and that things will run their course''.
+If we can be certain about one thing, it''s that Theo was Vincent''s best friend. But he could also count others amongst his friends. During his Dutch period, he had regular contact with Anthon van Rappard, a fellow artist with whom he sometimes went painting.
+He got to know Emile Bernard and Paul Gauguin in Paris, and the friends regularly wrote to each other. They also exchanged paintings, works that have come to be known as the ‘friend portraits''.'
+
 
 
 actions:
