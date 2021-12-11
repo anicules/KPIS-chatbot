@@ -110,7 +110,7 @@ nlu:
     - that information was good
     - thanks for the information
 
-- intent: opening_hours
+- intent: museum_opening_hours
   examples: |
     - when is the museum open?
     - what are the opening hours of the museum?
@@ -129,15 +129,40 @@ nlu:
     - can I visit today?
     - Working hours?
 
+- intent: museum_tickets
+  examples: |
+    - ticket
+    - tickets
+    - tickets cost
+    - ticket price
+    - ticket prices
+    - ticket types
+    - discounted tickets
+    - ticket information
+    - where can I buy tickets?
+    - can I buy tickets online?
+    - what are the prices for tickets?
+    - are there any student discounts?
+    - what are the ticket prices?
+
 - intent: exh_info
   examples: |
-    - when was the x86 created?
-    - what year was the x86 built? 
+    - is there any special exhibition?
+    - what is the exhibition about?
+    - exhibition
+    - special exhibition
+    - what can I do after I finish the tour?
+    - suggestions after visiting the museum?
+    - what else can I see at this museum?
+    - what else can I do?
+    - anything else to see apart from the art?
+    - does this museum only have art? 
 
 - intent: VG_cut_ear
   examples: |
     - Why Did Vincent van Gogh Cut off His Ear?
     - The reason Van Gogh cut off his ear?
+    - van gogh ear cut
 
 - intent: VG_potato_eaters
   examples: |
@@ -216,7 +241,19 @@ nlu:
 
 - intent: comp_exh_apple_macintosh
   examples: |
-    -
+    - apple macintosh
+    - what is the macintosh
+    - old mac
+    - old apple mac
+    - what is so special about the macintosh?
+    - when did apple release the macintosh?
+    - what was different about the macintosh?
+    - was the macintosh successful?
+    - did steve jobs build the macintosh?
+    - story of the apple macintosh
+    - give me some information about the apple macintosh
+    - information macintosh apple
+    - details apple macintosh
 
 - intent: comp_exh_ibm_pc
   examples: |
