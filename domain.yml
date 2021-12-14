@@ -1,139 +1,34 @@
-version: '2.0'
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+version: "3.0"
+
 intents:
-- bot_challenge
-- mood_great
-- greet
-- goodbye
-- affirm
-- deny
-- mood_unhappy
-- mood_suicide
-- thanks
-- VG_cut_ear
-- VG_potato_eaters
-- VG_yellow
-- VG_famous_death
-- VG_suicide
-- comp_exh_first_mouse_Engelbart
-- comp_exh_first_mouse
-- comp_exh_xerox_alto
-- comp_exh_apple_macintosh
-- comp_exh_ibm_pc
-- what_happened_to_ibm_pc_business
-- opening_hours
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
 
 responses:
   utter_greet:
-  - text: Hey! How are you?
+  - text: "Hey! How are you?"
+
   utter_cheer_up:
-  - text: 'Here is something to cheer you up:'
-    image: https://i.imgur.com/nGF1K8f.jpg
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
   utter_did_that_help:
-  - text: Did that help you?
+  - text: "Did that help you?"
+
   utter_happy:
-  - text: Great, carry on!
+  - text: "Great, carry on!"
+
   utter_goodbye:
-  - text: Bye
+  - text: "Bye"
+
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
-  utter_more_information:
-  - text: Would you like more information?
-  utter_thanks:
-  - text: Glad I could help.
+  - text: "I am a bot, powered by Rasa."
 
-  utter_museum_opening_hours:
-  - text: The museum is open during the week Monday-Friday between 10 AM and 8 PM. On Saturday it the museum is open between 9 AM and 9 PM, on Sunday between 10 AM and 6 PM (all time values are Berlin/CET or GMT+1).
-
-  utter_exh_info:
-  - text: We have a special exhibition going on the moment. The exhibition is called "History of Personal Computing" and will be opened to the public free of charge between November 15 and February 1st during the normal museum opeing hours. Have fun!
-
-  utter_VG_cut_ear:
-  - text: 'Vincent van Gogh cut off his left ear when tempers flared with Paul Gauguin, the artist with whom he had been working for a while in Arles. Van Gogh''s illness revealed itself. He began to hallucinate and suffered attacks in which he lost consciousness. During one of these attacks, he used the knife. He could later recall nothing about the event.'
-
-  utter_VG_potato_eaters:
-  - text: With a large work featuring multiple figures, Vincent van Gogh hoped to prove himself to the outside world – after nearly two years as an artist, he felt the time had come. The subject, a peasant family eating their daily meal, was popular at the time. He had little experience of full-length portraits, so decided to paint the figures sitting down. Vincent spent months practising painting heads, and The Potato Eaters was preceded by dozens of preparatory studies. He was pleased with the final work, but it drew severe criticism from his brother Theo and artist friend Anthon van Rappard.
-  
-  utter_VG_yellow:
-  - text: 'Vincent van Gogh painted what were destined to become his most famous works in sun-drenched Arles. Sunflowers, The Bedroom, The Yellow House and the sweeping landscapes with wheat fields, sowers and reapers under the shimmering sun. That''s what you associate with Van Gogh, what gets etched in your memory – all that yellow, used to portray the southern light and way of life. But Van Gogh naturally used plenty of other colours. Consider the paintings from his Dutch period, where he primarily used browns, greys and greens. Or his Parisian works, where his palette became noticeably lighter and brighter.'
-
-  utter_VG_famous_death:
-  - text: 'In the final two years of his life, Vincent had gained recognition amongst the avant-garde and his work had been displayed in exhibitions in Paris and Brussels. After Vincent’s death, his brother Theo wanted nothing more than to raise the profile of his brother''s work. But just six months later, Theo also passed away. His widow, Jo van Gogh-Bonger, set about completing the task. She sold some of Vincent''s works, loaned others out for exhibitions and – also very importantly – published his letters to Theo. Van Gogh’s fascinating life story is one of the reasons why his work gradually took the whole world by storm. Without Jo''s dedication, this would never have been possible.'
-
-  utter_VG_suicide:
-  - text: After his admission to the institution in Saint-Rémy, Vincent often mentions death in his letters. His ambition and faith in his own health gradually also starts to wane. Vincent is petrified that the attacks he suffered will return. Conversely, his brother is bursting with ambition. Theo was married, had recently become a father and was planning on starting his own art dealership. Vincent was still completely financially dependent on Theo, and perhaps felt like a millstone around his brother’s neck. Or perhaps he was worried that Theo would not be able to continue to send him sufficient funding in the future. We’ll probably never know the exact reason for sure.
-
-  utter_comp_exh_first_mouse:
-  - text: 'The first computer mouse was developed by Douglas Engelbart in the 1960s while he was exploring possible interaction methods between humans and computers. Engelbart was looking for a way of inputting X- and Y-coordnate data. Engelbart made some first notes about a device called a "bug" during 1963, This "bug" would be easy and natural to use compared to a stylus pen. The first mouse prototype was demonstrated at a conference (later called "The Mother of all Demos") 5 years later (in 1968). It was called mouse because of the cable that was attached to it. This mouse used two potentioneters perpendicular to each other and connected to wheels. The rotation of each wheel would be transmitted as motion along one axis.'
-    image: https://www.sri.com/wp-content/uploads/2019/08/mouse.jpg
-
-  utter_comp_exh_first_mouse_Engelbart:
-  - text: 'Douglas Carl Engelbart (January 30, 1925 – July 2, 2013) was an engineer and inventor, and an early computer and Internet pioneer. He is best known for his work on founding the field of human–computer interaction, particularly while at his Augmentation Research Center Lab in SRI International, which resulted in creation of the computer mouse, and the development of hypertext, networked computers, and precursors to graphical user interfaces. Engelbart''s law, the observation that the intrinsic rate of human performance is exponential, is named after him. NLS, the "oN-Line System," developed by the Augmentation Research Center under Engelbart''s guidance with funding primarily from ARPA (as DARPA was then known), demonstrated numerous technologies, most of which are now in widespread use; it included the computer mouse, bitmapped screens, hypertext; all of which were displayed at "The Mother of All Demos" in 1968. The lab was transferred from SRI to McDonnell Douglas in 1984, and NLS was renamed Augment (now the Doug Engelbart Institute). At McDonnell Douglas, Engelbart was limited by a lack of interest in his ideas and funding to pursue them, and retired in 1986. In 1988, Engelbart and his daughter Christina launched the Bootstrap Institute – later known as The Doug Engelbart Institute – to promote his vision, especially at Stanford University; this effort did result in some DARPA funding to modernize the user interface of Augment. In December 2000, United States President Bill Clinton awarded Engelbart the National Medal of Technology, the U.S.''s highest technology award. In December 2008, Engelbart was honored by SRI at the 40th anniversary of the "Mother of All Demos".'
-
-  utter_comp_exh_xerox_alto:
-  - text: 'The Xerox Alto is the first computer that was designed with an operating system based on a GUI, much like modern computers. The designers found their inspiration in the NLS developed by Douglas Engelbart. The first Xerox Alto PCs became available during 1973, about a decade before any other PC started using GUI operating systems. The Alto consisted of a cabinet, a 606x808 pixel CRT display (this display had the exact size of a sheet of paper), a 3-button mouse and a keyboard. It was meant to be available to consumers, but the high price led to limited sales. About 1000 Altos were used at the Xerox facilities, while 500 other units were used at universities. In total about 2000 Xerox Alto personal computers were built. Despite having a weak impact on the consumer PC market, the Alto paved the way for the modern computers. People didn''t need to be computer specialists in order to use them, the need to understand the technical details of the system was diminished and the focus was now on the task itself.'
-    image: http://images.computerhistory.org/revonline/images/102626737p-03-02.jpg?w=600 
-
-  utter_comp_exh_apple_macintosh:
-  - text: 'The Apple Macintosh was released in 1984 and set a new standard for personal computers. '
-    image: https://www.mac-history.net/wp-content/uploads/2011/01/retouchphoto_apple_macintosh_1984_high_res_clean1.jpg 
-
-  utter_comp_exh_ibm_pc:
-  - text: 'The IBM Personal Computer (on display is the model 5150, generally known as the IBM PC) is the first computer of the IBM PC model line and was released in 1981. The main idea was to develop a computer based on an open architecture. This meant that any other company could produce peripherals, expansion cards and software compatible with the IBM PC. Within a few months after its introduction, the IBM PC would become the most successful personal computer (surpassing the immensly popular Apple 2). Within 3 years, the IBM PC would be sold over 2 million times. Of course, as with any new and innovative technology, the IBM PC had its initial struggles  a senior executive questioned the idea of people wanting to have a PC at home. Still, the development process of this PC was entirely different from anything developed by IBM. The team used off-the-shelf components. This lead to a fairly low starting price of 1565 USD. At its peak, every minute of every business day an IBM PC would be sold. The open design meant that IBM competitors such as Dell, Compaq and HP could build their own versions of the personal computer. The IBM compatible architecture became an industry standard, much like the term personal computer.'
-
-  utter_what_happened_to_ibm_pc_business:
-  - text: Over time IBM developed new desktop, then laptop computers. One of the best-known laptop series would be the IBM ThinkPad-series. 24 years after revolutionizing the computer industry, in 2005, and due to financial trouble, IBM sold its PC division to Lenovo, which still sells laptops under the ThinkPad branding. IBM continues to exist, the company mainly produces server and cloud computing solutions.
-
-  utter_VG_secret:
-  - text: 'If you read Vincent''s letters, he doesn''t come across as a man who had big secrets. He was generally open in his correspondence with Theo, although it sometimes took him a while to report his latest news. He waited to tell Theo about his relationship with prostitute Sien Hoornik in The Hague. She was pregnant and had a daughter when Vincent met her. Vincent expressed any grievances he had, and vented how he felt about what was keeping him busy. In 1877, he wrote in a letter to Theo: ''Thanks for coming here yesterday, and do let''s carry on having as few secrets as possible. We''re brothers, after all''. It would''ve naturally been quite a scoop to discover that Van Gogh had fathered 16 children on the sly, but we''re yet to find any such skeletons in his cupboard.'
-
-  utter_VG_painting_qty:
-    - text: 'We don''t know exactly how many paintings Van Gogh sold during this lifetime, but in any case, it was more than a couple. Vincent''s first commission was from his uncle Cor. He was an art dealer and wanted to help his nephew on his way, so he ordered 19 cityscapes of The Hague. Vincent sold his first painting to the Parisian paint and art dealer Julien Tanguy, and his brother Theo successfully sold another work to a gallery in London. The Red Vineyard, which Vincent painted in 1888, was bought by Anna Boch, the sister of Vincent''s friend Eugène Boch. Van Gogh often traded work with other artists – in his younger years, often in exchange for some food or drawing and painting supplies. In this sense, Vincent actually ''sold'' quite a lot of work during his lifetime.'
-
-  utter_VG_hand:
-    - text: 'Van Gogh was right-handed. We are almost certain of this, because in two self-portraits, he''s pictured with the pallet in his right hand. But because he painted himself using a mirror, you need to flip that image. Vincent is therefore actually holding the pallet with his left hand, and his brush in his right.'
-
-  utter_VG_Theo_death:
-    - text: 'Theo had always been sickly and prone to ailments, but after Vincent''s death, his health deteriorated extremely rapidly indeed. He was admitted to hospital in mid-October 1890 and on 25 January 1891 – six months after Vincent''s death, he died of the effects of syphilis. Theo suffered from this illness for a long time. Back then, it was a common STD (bacterial infection) and a treatment was yet to be developed. Sufferers can be infected with syphilis for many years without knowing it, but the disease ultimately attacks various organs, including the heart, brain and spinal cord.'
-  
-  utter_VG_friends:
-    - text: 'If I didn''t have Theo it wouldn''t be possible for me to do justice to my work, but because I have him as a friend I believe that I''ll make more progress and that things will run their course. If we can be certain about one thing, it''s that Theo was Vincent''s best friend. But he could also count others amongst his friends. During his Dutch period, he had regular contact with Anthon van Rappard, a fellow artist with whom he sometimes went painting. He got to know Emile Bernard and Paul Gauguin in Paris, and the friends regularly wrote to each other. They also exchanged paintings, works that have come to be known as the friend portraits.'
-
-
-actions:
-- utter_greet
-- utter_happy
-- utter_iamabot
-- utter_more_information
-- utter_museum_opening_hours
-- utter_exh_info
-- utter_VG_cut_ear
-- utter_VG_potato_eaters
-- utter_VG_yellow
-- utter_VG_famous_death
-- utter_VG_suicide
-- utter_comp_exh_first_mouse
-- utter_comp_exh_first_mouse_Engelbart
-- utter_comp_exh_xerox_alto
-- utter_what_happened_to_ibm_pc_business
-- utter_comp_exh_ibm_pc
-- utter_comp_exh_apple_macintosh
-- utter_VG_secret
-- utter_VG_painting_qty
-- utter_VG_hand
-- utter_VG_Theo_death
-- utter_VG_friends
-
-# Sources
-# utter_comp_exh_first_mouse: https://www.sri.com/hoi/computer-mouse-and-interactive-computing/ and https://en.wikipedia.org/wiki/Computer_mouse#History 
-# utter_comp_exh_first_mouse_Engelbart: https://en.wikipedia.org/wiki/Douglas_Engelbart 
-# utter_comp_exh_xerox_alto: https://www.computerhistory.org/revolution/input-output/14/347 and https://en.wikipedia.org/wiki/Xerox_Alto and https://history-computer.com/xerox-alto-complete-history-of-the-xerox-alto-computer/ 
-# utter_comp_exh_apple_macintosh: https://www.mac-history.net/featured-2/2021-02-10/the-history-of-the-apple-macintosh and https://en.wikipedia.org/wiki/Macintosh_128K 
-# utter_comp_exh_ibm_pc:https://en.wikipedia.org/wiki/IBM_Personal_Computer and https://www.ibm.com/ibm/history/ibm100/us/en/icons/personalcomputer/ 
-# utter_VG_secret: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/what-was-van-goghs-biggest-secret
-# utter_VG_painting_qty: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/how-many-paintings-did-vincent-sell-during-his-lifetime
-# utter_VG_hand: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/was-van-gogh-left-or-right-handed#:~:text=Van%20Gogh%20was%20right%2Dhanded,his%20brush%20in%20his%20right.
-# utter_VG_Theo_death: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/why-did-theo-die-so-soon-after-vincent#:~:text=He%20was%20admitted%20to%20hospital,illness%20for%20a%20long%20time.
-# utter_VG_friends: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/who-were-van-goghs-best-friends#:~:text=During%20his%20Dutch%20period%2C%20he,regularly%20wrote%20to%20each%20other.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
