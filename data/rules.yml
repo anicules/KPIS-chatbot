@@ -2,6 +2,11 @@ version: "3.0"
 
 rules:
 
+- rule: Say hi anytime a user greets
+  steps:
+  - intent: greet
+  - action: utter_greet
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
@@ -11,3 +16,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Say 'you're welcome' anytime a user thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks

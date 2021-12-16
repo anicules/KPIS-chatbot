@@ -38,6 +38,20 @@ stories:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- story: provide information about museum opening hours and ticket prices and exhibition 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: museum_opening_hours
+  - action: utter_museum_opeing_hours
+  - intent: ticket_info
+  - action: utter_ticket_info
+  - intent: exh_info
+  - action: utter_exh_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
 - story: provide information about Van Gogh's ear (positive)
   steps:
   - intent: greet

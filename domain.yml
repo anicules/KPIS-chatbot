@@ -47,6 +47,9 @@ responses:
   utter_goodbye:
   - text: "Bye"
 
+  utter_thanks:
+  - text: "Glad I could be helpful."
+
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
@@ -56,6 +59,9 @@ responses:
   utter_museum_opening_hours:
   - text: "The museum is open during the week Monday-Friday between 10 AM and 8 PM. On Saturday it the museum is open between 9 AM and 9 PM, on Sunday between 10 AM and 6 PM (all time values are Berlin/CET or GMT+1)."
 
+  utter_ticket_info:
+  - text: "Tickets are available for purchase at the museum reception desk. "
+  
   utter_exh_info:
   - text: "We have a special exhibition going on the moment. The exhibition is called 'History of Personal Computing' and will be opened to the public free of charge between November 15 and February 1st during the normal museum opeing hours. Have fun!"
 

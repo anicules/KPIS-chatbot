@@ -146,7 +146,7 @@ nlu:
     - can I visit today?
     - Working hours?
 
-- intent: museum_tickets
+- intent: ticket_info
   examples: |
     - ticket
     - tickets
@@ -160,6 +160,12 @@ nlu:
     - can I buy tickets online?
     - what are the prices for tickets?
     - are there any student discounts?
+    - purchase tickets
+    - i want tickets
+    - where can i purchase tickets?
+    - how much are tickets?
+    - is the museum free of charge?
+    - can i visit the museum for free?
     - what are the ticket prices?
 
 - intent: exh_info
