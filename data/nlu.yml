@@ -186,6 +186,9 @@ nlu:
     - Why Did Vincent van Gogh Cut off His Ear?
     - The reason Van Gogh cut off his ear?
     - van gogh ear cut
+    - did van gogh cut his hear?
+    - van gogh ear
+    - is it true that van gogh is missing an ear
 
 - intent: VG_potato_eaters
   examples: |
@@ -201,6 +204,7 @@ nlu:
     - Why is yellow so prominent in Van Gogh's paintings?
     - Is yellow the most used color in Van Gogh's painting?
     - What is the most used color in Van Gogh's painting?
+    - van gogh yellow color favourite
     - Van Gogh's famouse works in yellow?
     - Was yellow Van Gogh's favorite color?
 
@@ -217,6 +221,8 @@ nlu:
   examples: |
     - Why Did Vincent van Gogh Commit Suicide?
     - Did Van Gogh commit suicide?
+    - suicide van gogh
+    - reason van gogh suicide
     - Why did Van Gogh try to kill himself?  
 
 - intent: comp_exh_first_mouse

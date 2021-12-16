@@ -21,3 +21,38 @@ rules:
   steps:
   - intent: thanks
   - action: utter_thanks
+
+- rule: Answer question anytime a user asks 
+  steps:
+  - intent:
+  - action:
+
+- rule: Answer question anytime a user asks 
+  steps:
+  - intent:
+  - action:
+
+- rule: Answer question anytime a user asks 
+  steps:
+  - intent:
+  - action:
+
+- rule: Answer question anytime a user asks 
+  steps:
+  - intent:
+  - action:
+
+- rule: Answer question anytime a user asks 
+  steps:
+  - intent:
+  - action:
+
+- rule: Answer question anytime a user asks 
+  steps:
+  - intent:
+  - action:
+
+- rule: Answer question anytime a user asks 
+  steps:
+  - intent:
+  - action:
