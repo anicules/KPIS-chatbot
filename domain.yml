@@ -11,17 +11,24 @@ intents:
   - mood_suicide
   - thanks
   - VG_cut_ear
+  - VG_friends
+  - VG_secret
   - VG_potato_eaters
   - VG_yellow
   - VG_famous_death
   - VG_suicide
+  - VG_hand
+  - VG_Theo_death
+  - VG_painting_qty
   - comp_exh_first_mouse_Engelbart
   - comp_exh_first_mouse
   - comp_exh_xerox_alto
   - comp_exh_apple_macintosh
   - comp_exh_ibm_pc
   - what_happened_to_ibm_pc_business
-  - opening_hours
+  - museum_opening_hours
+  - exh_info
+  - museum_tickets
 
 responses:
   utter_greet:
