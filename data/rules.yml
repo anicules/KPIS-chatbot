@@ -22,37 +22,107 @@ rules:
   - intent: thanks
   - action: utter_thanks
 
-- rule: Answer question anytime a user asks 
+- rule: Answer question anytime a user asks about ticket prices
   steps:
-  - intent:
-  - action:
+  - intent: ticket_info
+  - action: utter_ticket_info
+
+- rule: Answer question anytime a user asks about museum opening hours
+  steps:
+  - intent: museum_opening_hours
+  - action: utter_museum_opening_hours
+
+- rule: Answer question anytime a user asks about the special exhibition
+  steps:
+  - intent: exh_info
+  - action: utter_exh_info
+
+- rule: Answer question anytime a user asks about VG's cut ear
+  steps:
+  - intent: VG_cut_ear
+  - action: utter_VG_cut_ear
+
+- rule: Answer question anytime a user asks about the potato eaters painting
+  steps:
+  - intent: VG_potato_eaters
+  - action: utter_VG_potato_eaters
+
+- rule: Answer question anytime a user asks about VG's favourite color
+  steps:
+  - intent: VG_yellow
+  - action: utter_VG_yellow
+
+- rule: Answer question anytime a user asks about the death of VG
+  steps:
+  - intent: VG_famous_death
+  - action: utter_VG_famous_death
+
+- rule: Answer question anytime a user asks about VG's suicide
+  steps:
+  - intent: VG_suicide
+  - action: utter_VG_suicide
+
+- rule: Answer question anytime a user asks about the first mouse
+  steps:
+  - intent: comp_exh_first_mouse
+  - action: utter_comp_exh_first_mouse
+
+- rule: Answer question anytime a user asks about Engelbart, who designed the first mouse
+  steps:
+  - intent: comp_exh_first_mouse_Engelbart
+  - action: utter_comp_exh_first_mouse_Engelbart
+
+- rule: Answer question anytime a user asks about the Xerox Alto
+  steps:
+  - intent: comp_exh_xerox_alto
+  - action: utter_comp_exh_xerox_alto
+
+- rule: Answer question anytime a user asks about the Macintosh
+  steps:
+  - intent: comp_exh_apple_macintosh
+  - action: utter_comp_exh_apple_macintosh
+
+- rule: Answer question anytime a user asks about the IBM PC
+  steps:
+  - intent: comp_exh_ibm_pc
+  - action: utter_comp_exh_ibm_bc
+
+- rule: Answer question anytime a user asks about that happened to IBM
+  steps:
+  - intent: what_happened_to_ibm_pc_business
+  - action: utter_what_happened_to_ibm_pc_business
+
+- rule: Answer question anytime a user asks about any secrets of VG
+  steps:
+  - intent: VG_secrets
+  - action: utter_VG_secrets
 
 - rule: Answer question anytime a user asks 
   steps:
   - intent:
-  - action:
+  - action: utter_
 
 - rule: Answer question anytime a user asks 
   steps:
   - intent:
-  - action:
+  - action: utter_
 
 - rule: Answer question anytime a user asks 
   steps:
   - intent:
-  - action:
+  - action: utter_
 
 - rule: Answer question anytime a user asks 
   steps:
   - intent:
-  - action:
+  - action: utter_
 
 - rule: Answer question anytime a user asks 
   steps:
   - intent:
-  - action:
+  - action: utter_
 
 - rule: Answer question anytime a user asks 
   steps:
   - intent:
-  - action:
+  - action: utter_
