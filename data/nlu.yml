@@ -365,30 +365,32 @@ nlu:
     - Who were Van Goghs friends?
     - How many friends did Van Gogh have?
 
-- intent: VG_
+- intent: VG_starry_night
+  examples: |
+    - tell me about starry night
+    - what is starry night about?
+    - starry night painting van gogh
+    - what does starry night depict
+    - when was starry night painted?
+    - how was starry night painted?
+    - when was starr night painted?
+
+- intent: VG_self_portrait_1889
   examples: |
     - 
 
-- intent: VG_
+- intent: VG_irises
   examples: |
     - 
 
-- intent: VG_
+- intent: VG_almond_blossoms
   examples: |
     - 
 
-- intent: VG_
+- intent: VG_bedroom_in_arles
   examples: |
     - 
 
-- intent: VG_
-  examples: |
-    - 
-
-- intent: VG_
-  examples: |
-    - 
-
-- intent: VG_
+- intent: VG_cafe_terrace_at_night
   examples: |
     - 

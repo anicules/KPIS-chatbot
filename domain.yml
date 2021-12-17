@@ -21,6 +21,12 @@ intents:
   - VG_hand
   - VG_Theo_death
   - VG_painting_qty
+  - VG_self_portrait_1889
+  - VG_almond_blossoms
+  - VG_irises
+  - VG_starry_night
+  - VG_bedroom_in_arles
+  - VG_cafe_terrace_at_night
   - comp_exh_first_mouse_Engelbart
   - comp_exh_first_mouse
   - comp_exh_xerox_alto
@@ -117,6 +123,30 @@ responses:
   utter_VG_friends:
   - text: "If I didn't have Theo it wouldn't be possible for me to do justice to my work, but because I have him as a friend I believe that I'll make more progress and that things will run their course. If we can be certain about one thing, it's that Theo was Vincent's best friend. But he could also count others amongst his friends. During his Dutch period, he had regular contact with Anthon van Rappard, a fellow artist with whom he sometimes went painting. He got to know Emile Bernard and Paul Gauguin in Paris, and the friends regularly wrote to each other. They also exchanged paintings, works that have come to be known as the friend portraits."
 
+  utter_VG_starry_night:
+  - text: "'The Starry Night' is an oil-on-canvas painting by Vincent van Gogh. It was painted in June 1889 and it depicts the view at dusk from the east-facing window of his asylum room in Provence, France. Van Gogh added the imaginary village to the painting. 'The Starry Night' is one of the most recognized paintings in western art and perhaps Van Gogh's magnum opus."
+    image: "https://en.wikipedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+
+  utter_VG_self_portrait_1889:
+  - text: "The self-portrait of dutch painter Vincent van Gogh was painted with oil on canvas in 1889. Van Gogh made about 32 self-portaits over a 10 year period and this one is considered to be the painter's last self-portrait. He painted it shortly before he left the Saint-Rémy-de-Provence asylum in southern France. Some art reviewers consider that the painting doesn't show the 'good side' of van Gogh, but rather shows his aggitated, under mental, physical and emotional pressure state of mind."
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/300px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg"
+
+  utter_VG_irises:
+  - text: "'Irises' is one of multiple oil-on-canvas paintings of the iris flowers by van Gogh. This painting was made during the artist's last year before his death in 1890 at the Saint-Rémy-de-Provence asylum in southern France. Van Gogh started working at this painting within the first week of his arrival at the asylum (in May 1889), working in the garden of the hospital. He considered that painting was the only thing that kept him from going insane. 'Irises' is one of the few van Gogh paintings that looks full of life and without tragedy.Vincent's brother, Theo, wrote about the painting: '[it] strikes the eye from afar. The Irises are a beautiful study full of air and life.'."
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Irises-Vincent_van_Gogh.jpg/300px-Irises-Vincent_van_Gogh.jpg"
+
+  utter_VG_almond_blossoms:
+  - text: "'Almond Blossoms' is one of several oil-on-canvas paintings made by van Gogh between 1889 and 1890 during the artist's stay at the Saint-Rémy-de-Provence asylum in southern France. The painting depcits the blossoming almond trees typical for the region. Vincent van Gogh considered the blossoming trees to be special - for him they represented awakening, serenity and hope."
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg/300px-Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg"
+
+  utter_VG_bedroom_in_arles:
+  - text: ""
+    image: ""
+
+  utter_VG_cafe_terrace_at_night:
+  - text: ""
+    image: ""
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -130,5 +160,11 @@ session_config:
 # utter_VG_secret: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/what-was-van-goghs-biggest-secret
 # utter_VG_painting_qty: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/how-many-paintings-did-vincent-sell-during-his-lifetime
 # utter_VG_hand: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/was-van-gogh-left-or-right-handed#:~:text=Van%20Gogh%20was%20right%2Dhanded,his%20brush%20in%20his%20right.
-# utter_VG_Theo_death: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/why-did-theo-die-so-soon-after-vincent#:~:text=He%20was%20admitted%20to%20hospital,illness%20for%20a%20long%20time.
-# utter_VG_friends: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/who-were-van-goghs-best-friends#:~:text=During%20his%20Dutch%20period%2C%20he,regularly%20wrote%20to%20each%20other.
+# utter_VG_Theo_death: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/why-did-theo-die-so-soon-after-vincent#:~:text=He%20was%20admitted%20to%20hospital,illness%20for%20a%20long%20time
+# utter_VG_friends: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/who-were-van-goghs-best-friends#:~:text=During%20his%20Dutch%20period%2C%20he,regularly%20wrote%20to%20each%20other
+# utter_VG_starry_night: https://en.wikipedia.org/wiki/The_Starry_Night
+# utter_VG_self_portrait_1889: https://en.wikipedia.org/wiki/Van_Gogh_self-portrait_(1889)
+# utter_VG_irises: https://en.wikipedia.org/wiki/Irises_(painting)  
+# utter_VG_almond_blossoms: https://en.wikipedia.org/wiki/Almond_Blossoms
+# utter_VG_bedroom_in_arles: https://en.wikipedia.org/wiki/Bedroom_in_Arles
+# utter_VG_cafe_terace_at_night: https://en.wikipedia.org/wiki/Caf%C3%A9_Terrace_at_Night
