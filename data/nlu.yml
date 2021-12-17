@@ -190,6 +190,18 @@ nlu:
     - van gogh ear
     - is it true that van gogh is missing an ear
 
+- intent: VG_info
+  examples: |
+    - tell me everything about van gogh
+    - what do you know about van gogh?
+    - information about van gogh
+    - fun facts about van gogh?
+    - something I don't know about van gogh
+    - interesting things about van gogh
+    - facts van gogh
+    - van gogh the painter
+    - what's so special about van gogh?
+
 - intent: VG_potato_eaters
   examples: |
     - tell me about potato eaters
@@ -352,3 +364,31 @@ nlu:
     - Did he have any friend?
     - Who were Van Goghs friends?
     - How many friends did Van Gogh have?
+
+- intent: VG_
+  examples: |
+    - 
+
+- intent: VG_
+  examples: |
+    - 
+
+- intent: VG_
+  examples: |
+    - 
+
+- intent: VG_
+  examples: |
+    - 
+
+- intent: VG_
+  examples: |
+    - 
+
+- intent: VG_
+  examples: |
+    - 
+
+- intent: VG_
+  examples: |
+    - 

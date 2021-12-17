@@ -159,7 +159,7 @@ stories:
   - intent: exh_info
   - action: utter_exh_info
 
-- story: provide information about Van Gogh’s Biggest Secret
+- story: provide information about Van Gogh's Biggest Secret
   steps:
   - intent: greet
   - action: utter_greet
@@ -193,3 +193,43 @@ stories:
   - action: utter_greet
   - intent: VG_friends
   - action: utter_VG_friends
+
+- story: Tell facts about VG 0
+  steps:
+  - intent: VG_info
+  - action: utter_
+  - action: utter_
+  - action: utter_
+  - action: utter_
+
+- story: Tell facts about VG 0
+  steps:
+  - intent: VG_info
+  - action: utter_
+  - action: utter_
+  - action: utter_
+  - action: utter_
+
+- story: Tell facts about VG 0
+  steps:
+  - intent: VG_info
+  - action: utter_
+  - action: utter_
+  - action: utter_
+  - action: utter_
+
+- story: Tell facts about VG 0
+  steps:
+  - intent: VG_info
+  - action: utter_
+  - action: utter_
+  - action: utter_
+  - action: utter_
+
+- story: Tell facts about VG 0
+  steps:
+  - intent: VG_info
+  - action: utter_
+  - action: utter_
+  - action: utter_
+  - action: utter_

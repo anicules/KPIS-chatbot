@@ -37,31 +37,6 @@ rules:
   - intent: exh_info
   - action: utter_exh_info
 
-- rule: Answer question anytime a user asks about VG's cut ear
-  steps:
-  - intent: VG_cut_ear
-  - action: utter_VG_cut_ear
-
-- rule: Answer question anytime a user asks about the potato eaters painting
-  steps:
-  - intent: VG_potato_eaters
-  - action: utter_VG_potato_eaters
-
-- rule: Answer question anytime a user asks about VG's favourite color
-  steps:
-  - intent: VG_yellow
-  - action: utter_VG_yellow
-
-- rule: Answer question anytime a user asks about the death of VG
-  steps:
-  - intent: VG_famous_death
-  - action: utter_VG_famous_death
-
-- rule: Answer question anytime a user asks about VG's suicide
-  steps:
-  - intent: VG_suicide
-  - action: utter_VG_suicide
-
 - rule: Answer question anytime a user asks about the first mouse
   steps:
   - intent: comp_exh_first_mouse
@@ -92,10 +67,55 @@ rules:
   - intent: what_happened_to_ibm_pc_business
   - action: utter_what_happened_to_ibm_pc_business
 
+- rule: Answer question anytime a user asks about VG's cut ear
+  steps:
+  - intent: VG_cut_ear
+  - action: utter_VG_cut_ear
+
+- rule: Answer question anytime a user asks about the potato eaters painting
+  steps:
+  - intent: VG_potato_eaters
+  - action: utter_VG_potato_eaters
+
+- rule: Answer question anytime a user asks about VG's favourite color
+  steps:
+  - intent: VG_yellow
+  - action: utter_VG_yellow
+
+- rule: Answer question anytime a user asks about the death of VG
+  steps:
+  - intent: VG_famous_death
+  - action: utter_VG_famous_death
+
+- rule: Answer question anytime a user asks about VG's suicide
+  steps:
+  - intent: VG_suicide
+  - action: utter_VG_suicide
+
 - rule: Answer question anytime a user asks about any secrets of VG
   steps:
   - intent: VG_secrets
   - action: utter_VG_secrets
+
+- rule: Answer question anytime a user asks about the number of paintings of VG
+  steps:
+  - intent: VG_painting_qty
+  - action: utter_VG_painting_qty
+
+- rule: Answer question anytime a user asks about the dominant hand of VG
+  steps:
+  - intent: VG_hand
+  - action: utter_VG_hand
+
+- rule: Answer question anytime a user asks about the death of VG's brother, Theo
+  steps:
+  - intent: VG_Theo_death
+  - action: utter_VG_Theo_death
+
+- rule: Answer question anytime a user asks if VG was popular and had many friends
+  steps:
+  - intent: VG_friends
+  - action: utter_VG_friends
 
 - rule: Answer question anytime a user asks 
   steps:
