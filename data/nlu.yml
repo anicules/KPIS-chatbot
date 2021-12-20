@@ -377,6 +377,8 @@ nlu:
 
 - intent: VG_self_portrait_1889
   examples: |
+    - self portrait van gogh
+    - how many self portraits did van gogh make?
     - 
 
 - intent: VG_irises
