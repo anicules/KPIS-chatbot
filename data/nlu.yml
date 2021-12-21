@@ -361,9 +361,10 @@ nlu:
 - intent: VG_friends
   examples: |
     - Who Were Van Goghs Best Friends?
-    - Did he have any friend?
+    - Did he have any friends?
     - Who were Van Goghs friends?
     - How many friends did Van Gogh have?
+    - was vincent van gogh popular?
 
 - intent: VG_starry_night
   examples: |
@@ -373,7 +374,8 @@ nlu:
     - what does starry night depict
     - when was starry night painted?
     - how was starry night painted?
-    - when was starr night painted?
+    - when was starry night painted?
+    - starry night van gogh
 
 - intent: VG_self_portrait_1889
   examples: |
@@ -394,5 +396,9 @@ nlu:
     - 
 
 - intent: VG_cafe_terrace_at_night
+  examples: |
+    - 
+
+- intent: VG_yellow_house
   examples: |
     - 

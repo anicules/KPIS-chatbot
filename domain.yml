@@ -27,6 +27,7 @@ intents:
   - VG_starry_night
   - VG_bedroom_in_arles
   - VG_cafe_terrace_at_night
+  - VG_yellow_house
   - comp_exh_first_mouse_Engelbart
   - comp_exh_first_mouse
   - comp_exh_xerox_alto
@@ -140,12 +141,16 @@ responses:
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg/300px-Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg"
 
   utter_VG_bedroom_in_arles:
-  - text: ""
-    image: ""
+  - text: "'Bedroom in Arles' is actually a series of three oil-on-canvas paintintgs made by Vincent van Gogh between 1888 and 1889. The paintings show van Gogh's bedroom at 2, Place de Lamartine in Arles, France (also known as the Yellow house. There are two doors: the one to the right leads to the staircase and the one to the left leads to the guest room (which Vincent van Gogh prepared for Paul Gauguin. The window on the wall in the back of the room looks over Place de Lamartine and the public gardens. The shape of the room is trapezoidal, the obtuse angle is on the left side. The three paintings can be distinguished by the small paintings hanging on the wall painted on the right side." 
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg/405px-Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg"
 
   utter_VG_cafe_terrace_at_night:
-  - text: ""
-    image: ""
+  - text: "'Café Terrace at Night' is an oil-on-canvas painting made by dutch painter Vincent van Gogh in 1888 while he lived in Arles, France. Van Gogh did not sign this painting, but he described it in detail in three of his letters. The coffee shop (which was renovated during the 1990s to mimic the van Gogh's painting) is situated on the Place du Forum, the painting looks towards the rue du Palais and beyond, towards the former church which houses the Musée Lapidaire. Although van Gogh depicted the small lit shop on the right side of the painting, he omitted some of the roman monuments next to the shop."
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Van_Gogh_-_Terrasse_des_Caf%C3%A9s_an_der_Place_du_Forum_in_Arles_am_Abend1.jpeg/405px-Van_Gogh_-_Terrasse_des_Caf%C3%A9s_an_der_Place_du_Forum_in_Arles_am_Abend1.jpeg"
+
+  utter_VG_yellow_house:
+  - text: "'The Yellow House' is an oil-on-canvas painting made by dutch painter Vincent van Gogh in 1888 while he lived in 2, Place Lamartine, Arles, France. This is where he rented four rooms, two on the ground floor (a kitchen and his workshop) and two on the first floor. The room closer to the corner is the guest room, where Paul Gauguin lived. The building with the pink shade is the restaurant where van Gogh used to eat at and which was owned by his landlady. On the right side of the yellow house is the Avenue Montmajour which runs under two railway bridges (one with a train passing). The building was critically damaged during one of the Allied bombing runs in 1944 and was later demolished."
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Vincent_van_Gogh_-_The_yellow_house_%28%27The_street%27%29.jpg"
 
 session_config:
   session_expiration_time: 60
@@ -168,3 +173,4 @@ session_config:
 # utter_VG_almond_blossoms: https://en.wikipedia.org/wiki/Almond_Blossoms
 # utter_VG_bedroom_in_arles: https://en.wikipedia.org/wiki/Bedroom_in_Arles
 # utter_VG_cafe_terace_at_night: https://en.wikipedia.org/wiki/Caf%C3%A9_Terrace_at_Night
+# utter_VG_yellow_house: https://en.wikipedia.org/wiki/The_Yellow_House
