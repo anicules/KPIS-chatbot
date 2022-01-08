@@ -381,24 +381,49 @@ nlu:
   examples: |
     - self portrait van gogh
     - how many self portraits did van gogh make?
-    - 
+    - tell me about the 1889 self portrait of vincent van gogh
+    - how was van goghs 1889 self portrait made
+    - is there anything special about the self portrait of van gogh?
+    - van gogh self portrait 1889
+    - does the self portrait of van gogh from 1889 have any meaning?
+    - interpretation self portait
+    - when did van gogh paint his final self portrait?
+    - what is so special about this self portrait?
+    - was this the last self portrait of van gogh?
+    - why is this self portrait from 1889 so important?
 
 - intent: VG_irises
   examples: |
-    - 
+    - why did van gogh paint irises?
+    - irises vincent van gogh
+    - what does irises depict
+    - why did van gogh paint irises?
+    - when did vincent van gogh paint irises?
+    - irises vincent van gogh
 
 - intent: VG_almond_blossoms
   examples: |
+    - almond blossoms van gogh
     - 
 
 - intent: VG_bedroom_in_arles
   examples: |
+    - bedroom in arles vincent van gogh
+    - were there more bedroom in arles paintings?
+    - how many bedroom in arles paintings were made?
+    - does bedroom in arles depict van gogh actual room?
+    - did van gogh sleep in the bedroom in arles?
+    - was bedroom in arles van goghs real life room?
+    - what is the difference between the three bedroom in arles paintings?
     - 
 
 - intent: VG_cafe_terrace_at_night
   examples: |
-    - 
+    - cafe terrace at night vincent van gogh
 
 - intent: VG_yellow_house
   examples: |
+    - yellow house vincent van gogh
+    - did van gogh actually live in a yellow house?
+    - where did vincent van gogh live in arles?
     - 
