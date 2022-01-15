@@ -1,9 +1,9 @@
 {
-  "bot_challenge": {
+  "mood_great": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 5,
+    "support": 15,
     "confused_with": {}
   },
   "affirm": {
@@ -13,11 +13,11 @@
     "support": 11,
     "confused_with": {}
   },
-  "VG_cut_ear": {
+  "comp_exh_apple_macintosh": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 6,
+    "support": 13,
     "confused_with": {}
   },
   "mood_unhappy": {
@@ -25,6 +25,20 @@
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 14,
+    "confused_with": {}
+  },
+  "VG_friends": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "exh_info": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
     "confused_with": {}
   },
   "VG_irises": {
@@ -41,6 +55,27 @@
     "support": 10,
     "confused_with": {}
   },
+  "deny": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "VG_almond_blossoms": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "museum_opening_hours": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 16,
+    "confused_with": {}
+  },
   "VG_bedroom_in_arles": {
     "precision": 1.0,
     "recall": 1.0,
@@ -48,39 +83,25 @@
     "support": 7,
     "confused_with": {}
   },
-  "ticket_info": {
+  "comp_exh_xerox_alto": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 19,
+    "support": 13,
     "confused_with": {}
   },
-  "VG_yellow_house": {
+  "comp_exh_first_mouse_Engelbart": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 7,
+    "support": 8,
     "confused_with": {}
   },
-  "greet": {
-    "precision": 0.9375,
-    "recall": 1.0,
-    "f1-score": 0.967741935483871,
-    "support": 15,
-    "confused_with": {}
-  },
-  "VG_painting_qty": {
+  "VG_cafe_terrace_at_night": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 4,
-    "confused_with": {}
-  },
-  "exh_info": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 10,
+    "support": 5,
     "confused_with": {}
   },
   "goodbye": {
@@ -92,56 +113,7 @@
       "greet": 1
     }
   },
-  "VG_starry_night": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 7,
-    "confused_with": {}
-  },
-  "VG_almond_blossoms": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "comp_exh_first_mouse_Engelbart": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 8,
-    "confused_with": {}
-  },
-  "VG_self_portrait_1889": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 12,
-    "confused_with": {}
-  },
-  "VG_cafe_terrace_at_night": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "VG_basics": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 8,
-    "confused_with": {}
-  },
-  "thanks": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 8,
-    "confused_with": {}
-  },
-  "VG_potato_eaters": {
+  "VG_famous_death": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
@@ -162,14 +134,35 @@
     "support": 5,
     "confused_with": {}
   },
-  "comp_exh_xerox_alto": {
+  "VG_potato_eaters": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 13,
+    "support": 6,
+    "confused_with": {}
+  },
+  "VG_self_portrait_1889": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "ticket_info": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 19,
     "confused_with": {}
   },
   "VG_hand": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "VG_info": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
@@ -190,39 +183,53 @@
     "support": 7,
     "confused_with": {}
   },
-  "comp_exh_apple_macintosh": {
+  "VG_yellow_house": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 13,
+    "support": 7,
     "confused_with": {}
   },
-  "mood_great": {
+  "VG_yellow": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "VG_painting_qty": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "bot_challenge": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "VG_cut_ear": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 0.9375,
+    "recall": 1.0,
+    "f1-score": 0.967741935483871,
     "support": 15,
     "confused_with": {}
   },
-  "mood_suicide": {
+  "VG_starry_night": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 10,
-    "confused_with": {}
-  },
-  "VG_friends": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "VG_info": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
+    "support": 7,
     "confused_with": {}
   },
   "VG_secrets": {
@@ -232,32 +239,25 @@
     "support": 5,
     "confused_with": {}
   },
-  "museum_opening_hours": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 16,
-    "confused_with": {}
-  },
-  "deny": {
+  "VG_basics": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 8,
     "confused_with": {}
   },
-  "VG_famous_death": {
+  "mood_suicide": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 6,
+    "support": 10,
     "confused_with": {}
   },
-  "VG_yellow": {
+  "thanks": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 6,
+    "support": 8,
     "confused_with": {}
   },
   "accuracy": 0.9969604863221885,

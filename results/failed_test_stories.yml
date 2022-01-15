@@ -1,1 +1,11 @@
-# None of the test stories failed - all good!
+version: "3.0"
+stories:
+- story: provide information about the IBM PC and the IBM computer business (positive 2) (data\stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: comp_exh_ibm_pc
+  - action: utter_comp_exh_ibm_pc
+  - action: action_listen  # predicted: utter_ask_more_information_IBM_business
+  - intent: what_happened_to_ibm_pc_business
+  - action: utter_comp_exh_ibm_pc_business

@@ -1,5 +1,4 @@
 version: "3.0"
-
 nlu:
 - intent: greet
   examples: |
@@ -18,7 +17,6 @@ nlu:
     - good afternoon
     - hallo
     - hi!
-
 - intent: goodbye
   examples: |
     - cu
@@ -34,7 +32,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -48,7 +45,6 @@ nlu:
     - ja
     - jas
     - da
-
 - intent: deny
   examples: |
     - no
@@ -59,7 +55,7 @@ nlu:
     - no way
     - not really
     - nein
-
+    - ni
 - intent: mood_great
   examples: |
     - perfect
@@ -77,7 +73,6 @@ nlu:
     - so good
     - so perfect
     - I'm fine, thank you
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -94,7 +89,6 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-
 - intent: mood_suicide
   examples: |
     - i will kill myself
@@ -107,7 +101,6 @@ nlu:
     - I have nothing to live for
     - I'm really bad
     - I'm at my limit
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -115,7 +108,6 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
     - what are you?
-
 - intent: thanks
   examples: |
     - Thank you
@@ -126,7 +118,6 @@ nlu:
     - you were helpful
     - that information was good
     - thanks for the information
-
 - intent: museum_opening_hours
   examples: |
     - when is the museum open?
@@ -145,7 +136,6 @@ nlu:
     - when can i visit today?
     - can I visit today?
     - Working hours?
-
 - intent: ticket_info
   examples: |
     - ticket
@@ -167,7 +157,6 @@ nlu:
     - is the museum free of charge?
     - can i visit the museum for free?
     - what are the ticket prices?
-
 - intent: exh_info
   examples: |
     - is there any special exhibition?
@@ -179,8 +168,7 @@ nlu:
     - what else can I see at this museum?
     - what else can I do?
     - anything else to see apart from the art?
-    - does this museum only have art? 
-
+    - does this museum only have art?
 - intent: VG_cut_ear
   examples: |
     - Why Did Vincent van Gogh Cut off His Ear?
@@ -189,7 +177,6 @@ nlu:
     - did van gogh cut his hear?
     - van gogh ear
     - is it true that van gogh is missing an ear
-
 - intent: VG_info
   examples: |
     - fun facts about van gogh?
@@ -197,7 +184,6 @@ nlu:
     - interesting things about van gogh
     - van gogh the painter
     - what's so special about van gogh?
-
 - intent: VG_basics
   examples: |
     - when was van gogh born?
@@ -209,7 +195,6 @@ nlu:
     - painter van gogh
     - how many paintings did van gogh make
     - 
-
 - intent: VG_potato_eaters
   examples: |
     - tell me about potato eaters
@@ -218,7 +203,6 @@ nlu:
     - Who were potao eaters?
     - How long did it take to paint potato eaters?
     - Was he pleased with poato eaters?
-
 - intent: VG_yellow
   examples: |
     - Why is yellow so prominent in Van Gogh's paintings?
@@ -227,7 +211,6 @@ nlu:
     - van gogh yellow color favourite
     - Van Gogh's famouse works in yellow?
     - Was yellow Van Gogh's favorite color?
-
 - intent: VG_famous_death
   examples: |
     - How Did Vincent van Gogh Become Famous after His Death?
@@ -236,15 +219,13 @@ nlu:
     - Who did make Van Gogh faous after his death?
     - Was Van Gogh famous before his death?
     - Was Van Gogh famous when he was alive?
-
 - intent: VG_suicide
   examples: |
     - Why Did Vincent van Gogh Commit Suicide?
     - Did Van Gogh commit suicide?
     - suicide van gogh
     - reason van gogh suicide
-    - Why did Van Gogh try to kill himself?  
-
+    - Why did Van Gogh try to kill himself?
 - intent: comp_exh_first_mouse
   examples: |
     - tell me about the mouse
@@ -260,7 +241,6 @@ nlu:
     - what is Douglas Engelbart best known for?
     - was the first computer mouse built in germany?
     - did the germans develop the first mouse ever?
-
 - intent: comp_exh_first_mouse_Engelbart
   examples: |
     - who created the first mouse?
@@ -271,7 +251,6 @@ nlu:
     - Engelbart author first mouse
     - did Douglas Engelbart create the first mouse?
     - who invented the mouse?
-
 - intent: comp_exh_xerox_alto
   examples: |
     - xerox alto
@@ -287,7 +266,8 @@ nlu:
     - what did the xerox alto contain?
     - was the xerox alto the first pc?
     - tell me about the xerox alto
-
+    - xrerpx alto
+    - xexrxo tola
 - intent: comp_exh_apple_macintosh
   examples: |
     - apple macintosh
@@ -303,7 +283,6 @@ nlu:
     - give me some information about the apple macintosh
     - information macintosh apple
     - details apple macintosh
-
 - intent: comp_exh_ibm_pc
   examples: |
     - ibm pc
@@ -316,7 +295,6 @@ nlu:
     - tell me about the ibm pc
     - how did ibm revolutionize the computing industry?
     - why is the ibm pc the father of all modern pcs?
-
 - intent: what_happened_to_ibm_pc_business
   examples: |
     - what happened to ibm?
@@ -332,7 +310,6 @@ nlu:
     - did ibm go bankrupt?
     - is ibm bankrupt?
     - ibm bankrupcy
-
 - intent: VG_secrets
   examples: |
     - What Was Van Goghs Biggest Secret?
@@ -340,14 +317,12 @@ nlu:
     - Van Gogh''s Biggest Secret
     - Does Van Gogh a secret?
     - To whom did Van Gogh tell his secrets?
- 
 - intent: VG_painting_qty
   examples: |
     - How Many Paintings Did Vincent Sell during His Lifetime?
     - first painting
     - How Van Gogh did sell his paintings?
     - Who was the first one that bought Van Goghs painting?
-
 - intent: VG_hand
   examples: |
     - Was Van Gogh left or right-handed?
@@ -355,7 +330,6 @@ nlu:
     - Was Van Gogh left-handed?
     - How do you know that he was right-handed?
     - Why was Van Gogh right-handed?
-
 - intent: VG_Theo_death
   examples: |
     - Why Did Theo Die So Soon after Vincent?
@@ -365,7 +339,6 @@ nlu:
     - Why did his brother die?
     - Was Theo ill?
     - What was Theos illness?
-
 - intent: VG_friends
   examples: |
     - Who Were Van Goghs Best Friends?
@@ -373,7 +346,6 @@ nlu:
     - Who were Van Goghs friends?
     - How many friends did Van Gogh have?
     - was vincent van gogh popular?
-
 - intent: VG_starry_night
   examples: |
     - tell me about starry night
@@ -382,9 +354,7 @@ nlu:
     - what does starry night depict
     - when was starry night painted?
     - how was starry night painted?
-    - when was starry night painted?
     - starry night van gogh
-
 - intent: VG_self_portrait_1889
   examples: |
     - self portrait van gogh
@@ -399,16 +369,12 @@ nlu:
     - what is so special about this self portrait?
     - was this the last self portrait of van gogh?
     - why is this self portrait from 1889 so important?
-
 - intent: VG_irises
   examples: |
     - why did van gogh paint irises?
     - irises vincent van gogh
     - what does irises depict
-    - why did van gogh paint irises?
     - when did vincent van gogh paint irises?
-    - irises vincent van gogh
-
 - intent: VG_almond_blossoms
   examples: |
     - almond blossoms van gogh
@@ -416,7 +382,6 @@ nlu:
     - tell me about the painting almond blossoms
     - when was almond blossoms painted?
     - what does almond blossoms depict
-
 - intent: VG_bedroom_in_arles
   examples: |
     - bedroom in arles vincent van gogh
@@ -426,16 +391,13 @@ nlu:
     - did van gogh sleep in the bedroom in arles?
     - was bedroom in arles van goghs real life room?
     - what is the difference between the three bedroom in arles paintings?
-    - 
-
 - intent: VG_cafe_terrace_at_night
   examples: |
     - cafe terrace at night vincent van gogh
     - is the place from cafe terrace at night by van gogh real?
-    - where is the cafe from terrace at night 
+    - where is the cafe from terrace at night
     - tell me about cafe terrace at night
-    - what is so special about cafe terrace at night 
-
+    - what is so special about cafe terrace at night
 - intent: VG_yellow_house
   examples: |
     - yellow house vincent van gogh
@@ -445,3 +407,8 @@ nlu:
     - does the yellow house still exist
     - what happened to the yellow house
     - why did van gogh paint yellow house
+    - oggh yellowhouse
+    - van gogh yellow house
+- intent: nlu_fallback
+  examples: |
+    - van oghfsd ellos hosue
