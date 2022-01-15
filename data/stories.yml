@@ -38,19 +38,58 @@ stories:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- story: provide information about museum opening hours and ticket prices and exhibition 1
+- story: provide information about museum opening hours
   steps:
   - intent: greet
   - action: utter_greet
   - intent: museum_opening_hours
   - action: utter_museum_opeing_hours
-  - intent: ticket_info
-  - action: utter_ticket_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_thanks
+
+- story: provide information about tickets
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: museum_opening_hours
+  - action: utter_museum_opening_hours
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_thanks
+
+- story: provide information about exhibition
+  steps:
+  - intent: greet
+  - action: utter_greet
   - intent: exh_info
   - action: utter_exh_info
   - action: utter_did_that_help
   - intent: affirm
-  - action: utter_happy
+  - action: utter_thanks
+
+- story: provide basic information about Van Gogh (positive)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_basics
+  - action: utter_VG_basics
+  - action: utter_more_information_VG
+  - intent: affirm
+  - action: utter_VG_cut_ear
+  - action: utter_VG_yellow
+  - action: utter_VG_suicide
+  - action: utter_VG_famous death
+
+- story: provide basic information about Van Gogh (negative)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_basics
+  - action: utter_VG_basics
+  - action: utter_more_information_VG
+  - intent: deny
+  - action: utter_deny_help
 
 - story: provide information about Van Gogh's ear (positive)
   steps:
@@ -58,9 +97,9 @@ stories:
   - action: utter_greet
   - intent: VG_cut_ear
   - action: utter_VG_cut_ear
-  - action: utter_more_information
+  - action: utter_ask_more_information_VG
   - intent: affirm
-  - action: utter_happy
+  - action: utter_more_information_VG
 
 - story: provide information about Van Gogh's ear (negative)
   steps:
@@ -68,29 +107,9 @@ stories:
   - action: utter_greet
   - intent: VG_cut_ear
   - action: utter_VG_cut_ear
-  - action: utter_more_information
+  - action: utter_ask_more_information_VG
   - intent: deny
-  - action: utter_goodbye
-
-- story: provide information about Van Gogh's painting potato eaters (positive)
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: VG_potato_eaters
-  - action: utter_VG_potato_eaters
-  - action: utter_more_information
-  - intent: affirm
-  - action: utter_happy
-
-- story: provide information about Van Gogh's painting potato eaters (negative)
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: VG_potato_eaters
-  - action: utter_VG_potato_eaters
-  - action: utter_more_information
-  - intent: deny
-  - action: utter_goodbye
+  - action: utter_deny_help
 
 - story: provide information about yellow color in Van Gogh's paintings (positive)
   steps:
@@ -98,9 +117,9 @@ stories:
   - action: utter_greet
   - intent: VG_yellow
   - action: utter_VG_yellow
-  - action: utter_more_information
+  - action: utter_ask_more_information_VG
   - intent: affirm
-  - action: utter_happy
+  - action: utter_more_information_VG
 
 - story: provide information about yellow color in Van Gogh's paintings (negative)
   steps:
@@ -108,56 +127,23 @@ stories:
   - action: utter_greet
   - intent: VG_yellow
   - action: utter_VG_yellow
-  - action: utter_more_information
+  - action: utter_ask_more_information_VG
   - intent: deny
-  - action: utter_goodbye
+  - action: utter_deny_help
 
-- story: provide information about becoming famous after death (positive)
+- story: provide information about becoming famous after death
   steps:
   - intent: greet
   - action: utter_greet
   - intent: VG_famous_death
   - action: utter_VG_famous_death
-  - action: utter_more_information
-  - intent: affirm
-  - action: utter_happy
 
-- story: provide information about becoming famous after death (negative)
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: VG_famous_death
-  - action: utter_VG_famous_death
-  - action: utter_more_information
-  - intent: deny
-  - action: utter_goodbye
-
-- story: provide information about Van Gogh's suicide (positive)
+- story: provide information about Van Gogh's suicide
   steps:
   - intent: greet
   - action: utter_greet
   - intent: VG_suicide
   - action: utter_VG_suicide
-  - action: utter_more_information
-  - intent: affirm
-  - action: utter_happy
-
-- story: provide information about Van Gogh's suicide (negative)
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: VG_suicide
-  - action: utter_VG_suicide
-  - action: utter_more_information
-  - intent: deny
-  - action: utter_goodbye
-
-- story: provide information about the special exhibition
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: exh_info
-  - action: utter_exh_info
 
 - story: provide information about Van Gogh's Biggest Secret
   steps:
@@ -194,42 +180,225 @@ stories:
   - intent: VG_friends
   - action: utter_VG_friends
 
-- story: Tell facts about VG 0
+- story: provide information about Van Gogh's painting potato eaters (positive)
   steps:
-  - intent: VG_info
-  - action: utter_
-  - action: utter_
-  - action: utter_
-  - action: utter_
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_potato_eaters
+  - action: utter_VG_potato_eaters
+  - action: utter_ask_more_information_VG
+  - intent: affirm
+  - action: utter_more_information_VG
 
-- story: Tell facts about VG 0
+- story: provide information about Van Gogh's painting potato eaters (negative)
   steps:
-  - intent: VG_info
-  - action: utter_
-  - action: utter_
-  - action: utter_
-  - action: utter_
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_potato_eaters
+  - action: utter_VG_potato_eaters
+  - action: utter_ask_more_information_VG
+  - intent: deny
+  - action: utter_deny_help
 
-- story: Tell facts about VG 0
+- story: provide information about Van Gogh's painting Starry Night (positive)
   steps:
-  - intent: VG_info
-  - action: utter_
-  - action: utter_
-  - action: utter_
-  - action: utter_
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_starry_night
+  - action: utter_VG_starry_night
+  - action: utter_ask_more_information_VG
+  - intent: affirm
+  - action: utter_more_information_VG
 
-- story: Tell facts about VG 0
+- story: provide information about Van Gogh's painting Starry Night (negative)
   steps:
-  - intent: VG_info
-  - action: utter_
-  - action: utter_
-  - action: utter_
-  - action: utter_
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_starry_night
+  - action: utter_VG_starry_night
+  - action: utter_ask_more_information_VG
+  - intent: deny
+  - action: utter_deny_help
 
-- story: Tell facts about VG 0
+- story: provide information about Van Gogh's painting Selft Portrait from 1889 (positive)
   steps:
-  - intent: VG_info
-  - action: utter_
-  - action: utter_
-  - action: utter_
-  - action: utter_
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_self_portrait_1889
+  - action: utter_VG_self_portrait_1889
+  - action: utter_ask_more_information_VG
+  - intent: affirm
+  - action: utter_more_information_VG
+
+- story: provide information about Van Gogh's painting Self Portrait from 1889 (negative)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_self_portrait_1889
+  - action: utter_VG_self_potrait_1889
+  - action: utter_ask_more_information_VG
+  - intent: deny
+  - action: utter_deny_help
+
+- story: provide information about Van Gogh's painting irises (positive)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_irises
+  - action: utter_irises
+  - action: utter_ask_more_information_VG
+  - intent: affirm
+  - action: utter_more_information_VG
+
+- story: provide information about Van Gogh's painting irises (negative)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_irises
+  - action: utter_VG_irises
+  - action: utter_ask_more_information_VG
+  - intent: deny
+  - action: utter_deny_help
+
+- story: provide information about Van Gogh's painting Almond Blossoms (positive)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_almond_blossoms
+  - action: utter_VG_almond_blossoms
+  - action: utter_ask_more_information_VG
+  - intent: affirm
+  - action: utter_more_information_VG
+
+- story: provide information about Van Gogh's painting Almond Blossoms (negative)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_almond_blossoms
+  - action: utter_VG_almond_blossoms
+  - action: utter_ask_more_information_VG
+  - intent: deny
+  - action: utter_deny_help
+  
+- story: provide information about Van Gogh's painting Bedroom in Arles (positive)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_bedroom_in_arles
+  - action: utter_VG_bedroom_in_arles
+  - action: utter_ask_more_information_VG
+  - intent: affirm
+  - action: utter_more_information_VG
+
+- story: provide information about Van Gogh's painting Bedroom in Arles (negative)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_bedroom_in_arles
+  - action: utter_VG_bedroom_in_arles
+  - action: utter_ask_more_information_VG
+  - intent: deny
+  - action: utter_deny_help
+  
+- story: provide information about Van Gogh's painting Cafe Terrace at Night (positive)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_cafe_terrace_at_night
+  - action: utter_VG_cafe_terrace_at_night
+  - action: utter_ask_more_information_VG
+  - intent: affirm
+  - action: utter_more_information_VG
+
+- story: provide information about Van Gogh's painting Cafe Terrace at Night (negative)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_cafe_terrace_at_night
+  - action: utter_VG_cafe_terrace_at_night
+  - action: utter_ask_more_information_VG
+  - intent: deny
+  - action: utter_deny_help
+  
+- story: provide information about Van Gogh's painting Yellow House (positive)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_yellow_house
+  - action: utter_VG_yellow_house
+  - action: utter_ask_more_information_VG
+  - intent: affirm
+  - action: utter_more_information_VG
+
+- story: provide information about Van Gogh's painting Yellow House (negative)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VG_yellow_house
+  - action: utter_VG_yellow_house
+  - action: utter_ask_more_information_VG
+  - intent: deny
+  - action: utter_deny_help
+  
+- story: provide information about the first mouse and Engelbart the creator (exh) (positive)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: comp_exh_first_mouse
+  - action: utter_comp_exh_first_mouse
+  - action: utter_ask_more_information_Engelbart
+  - intent: affirm
+  - action: utter_comp_exh_first_mouse_Engelbart
+
+- story: provide information about the first mouse and Engelbart the creator (exh) (negative)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: comp_exh_first_mouse
+  - action: utter_comp_exh_first_mouse
+  - action: utter_ask_more_information_Engelbart
+  - intent: deny
+  - action: utter_deny_help
+  
+- story: provide information about the Xerox Alto (exh)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: comp_exh_xerox_alto
+  - action: utter_xerox_alto
+
+- story: provide information about the Apple Macintosh 128k (exh)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: comp_exh_apple_macintosh
+  - action: utter_comp_exh_apple_macintosh
+  
+- story: provide information about the IBM PC and the IBM computer business (positive 1)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: comp_exh_ibm_pc
+  - action: utter_comp_exh_ibm_pc
+  - action: utter_ask_more_information_IBM_business
+  - intent: affirm
+  - action: utter_comp_exh_ibm_pc_business
+
+- story: provide information about the IBM PC and the IBM computer business (negative 1)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: comp_exh_ibm_pc
+  - action: utter_comp_exh_ibm_pc
+  - action: utter_ask_more_information_IBM_business
+  - intent: deny
+  - action: utter_deny_help
+
+- story: provide information about the IBM PC and the IBM computer business (positive 2)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: comp_exh_ibm_pc
+  - action: utter_comp_exh_ibm_pc
+  - intent: what_happened_to_ibm_pc_business
+  - action: utter_comp_exh_ibm_pc_business

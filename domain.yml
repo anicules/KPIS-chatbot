@@ -11,6 +11,7 @@ intents:
   - mood_suicide
   - thanks
   - VG_info
+  - VG_basics
   - VG_cut_ear
   - VG_friends
   - VG_secret
@@ -40,7 +41,7 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey!"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -59,10 +60,22 @@ responses:
   - text: "Glad I could be helpful."
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a chatbot, powered by Rasa."
 
-  utter_more_information:
-  - text: Would you like more information?
+  utter_ask_more_information_VG:
+  - text: "Would you like more information about Vincent van Gogh?"
+
+  utter_ask_more_information_Engelbart:
+  - text: "Would you like to know more about the creator of the first mouse?"
+
+  utter_ask_more_information_IBM_business:
+  - text: "Would you like more information on why IBM is no longer making consumer PCs?"
+
+  utter_more_information_VG:
+  - text: "Sure, just ask away."
+
+  utter_deny_help:
+  - text: "Alright, I'm still here if you need more help"
 
   utter_museum_opening_hours:
   - text: "The museum is open during the week Monday-Friday between 10 AM and 8 PM. On Saturday it the museum is open between 9 AM and 9 PM, on Sunday between 10 AM and 6 PM (all time values are Berlin/CET or GMT+1)."
@@ -73,6 +86,9 @@ responses:
   utter_exh_info:
   - text: "We have a special exhibition going on the moment. The exhibition is called 'History of Personal Computing' and will be opened to the public free of charge between November 15 and February 1st during the normal museum opeing hours. Have fun!"
 
+  utter_VG_basics:
+  - text: "Vincent Willem van Gogh was born on the 30th of March 1853 in Groot-Zundert, in the province North-Brabant of the Netherlands. During his lifetime, he suffered from psychotic episodes and dellusions and despite the fact that he seemed worried about his mental health, he drank heavily and did not eat well. He died on the 29th of July 1890, after shooting himself with a revolver. The shot did not kill him instantly, and he was attended to by a few doctors. However, he died from infection 2 days later, since the bullet could not be removed. Van Gogh became famous only after his death, despite the fact that during his lifetime he created around 2000 artworks, out of which 860 were oil paintings (most of which he made during the last 2 years of his lifetime). Even though he was considered a failure and madman during his lifetime, Van Gogh's art nowadays is one of the most expensive art sold (he came to be seen as a misunderstood genius) and his legacy is honoured by the Van Gogh museum in Amsterdam, which holds the world's largest collection of his drawings and paintings."
+  
   utter_VG_cut_ear:
   - text: "Vincent van Gogh cut off his left ear when tempers flared with Paul Gauguin, the artist with whom he had been working for a while in Arles. Van Gogh's illness revealed itself. He began to hallucinate and suffered attacks in which he lost consciousness. During one of these attacks, he used the knife. He could later recall nothing about the event."
 
@@ -100,13 +116,13 @@ responses:
     image: "http://images.computerhistory.org/revonline/images/102626737p-03-02.jpg?w=600" 
 
   utter_comp_exh_apple_macintosh:
-  - text: "The Apple Macintosh was released in 1984 and set a new standard for personal computers. "
+  - text: "The Apple Macintosh was released in 1984 (2 days after the critically acclaimed 1984 ad aired) and set a new standard for personal computers. After the Apple Lisa flopped due to poor performance and a high price-tag, Apple needed a worthy successor to the Apple II. The Apple Macintosh aimed to change the way consumers used PC and make them more affordable and 'personal'.  Despite the fact that the Apple Mactintosh only shipped with 2 programs (MacWrite - a visual text editor and MacPaint - a painting program)pre-installed, it managed to sell over 70.000 units and its popularity promted Apple to release an upgraded version of this model in 1985. Finder, the file explorer still in use today, was introduced with the original Apple Macintosh."
     image: "https://www.mac-history.net/wp-content/uploads/2011/01/retouchphoto_apple_macintosh_1984_high_res_clean1.jpg" 
 
   utter_comp_exh_ibm_pc:
   - text: "The IBM Personal Computer (on display is the model 5150, generally known as the IBM PC) is the first computer of the IBM PC model line and was released in 1981. The main idea was to develop a computer based on an open architecture. This meant that any other company could produce peripherals, expansion cards and software compatible with the IBM PC. Within a few months after its introduction, the IBM PC would become the most successful personal computer (surpassing the immensly popular Apple 2). Within 3 years, the IBM PC would be sold over 2 million times. Of course, as with any new and innovative technology, the IBM PC had its initial struggles  a senior executive questioned the idea of people wanting to have a PC at home. Still, the development process of this PC was entirely different from anything developed by IBM. The team used off-the-shelf components. This lead to a fairly low starting price of 1565 USD. At its peak, every minute of every business day an IBM PC would be sold. The open design meant that IBM competitors such as Dell, Compaq and HP could build their own versions of the personal computer. The IBM compatible architecture became an industry standard, much like the term personal computer."
 
-  utter_what_happened_to_ibm_pc_business:
+  utter_comp_exh_ibm_pc_business:
   - text: "Over time IBM developed new desktop, then laptop computers. One of the best-known laptop series would be the IBM ThinkPad-series. 24 years after revolutionizing the computer industry, in 2005, and due to financial trouble, IBM sold its PC division to Lenovo, which still sells laptops under the ThinkPad branding. IBM continues to exist, the company mainly produces server and cloud computing solutions."
 
   utter_VG_secret:
@@ -157,10 +173,11 @@ session_config:
   carry_over_slots_to_new_session: true
 
 # Sources
+# utter_VG_basics: https://en.wikipedia.org/wiki/Vincent_van_Gogh
 # utter_comp_exh_first_mouse: https://www.sri.com/hoi/computer-mouse-and-interactive-computing/ and https://en.wikipedia.org/wiki/Computer_mouse#History 
 # utter_comp_exh_first_mouse_Engelbart: https://en.wikipedia.org/wiki/Douglas_Engelbart 
 # utter_comp_exh_xerox_alto: https://www.computerhistory.org/revolution/input-output/14/347 and https://en.wikipedia.org/wiki/Xerox_Alto and https://history-computer.com/xerox-alto-complete-history-of-the-xerox-alto-computer/ 
-# utter_comp_exh_apple_macintosh: https://www.mac-history.net/featured-2/2021-02-10/the-history-of-the-apple-macintosh and https://en.wikipedia.org/wiki/Macintosh_128K 
+# utter_comp_exh_apple_macintosh: https://www.mac-history.net/featured-2/2021-02-10/the-history-of-the-apple-macintosh and https://en.wikipedia.org/wiki/Macintosh_128K and https://www.computerworld.com/article/3025619/the-evolution-of-the-macintosh.html 
 # utter_comp_exh_ibm_pc:https://en.wikipedia.org/wiki/IBM_Personal_Computer and https://www.ibm.com/ibm/history/ibm100/us/en/icons/personalcomputer/ 
 # utter_VG_secret: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/what-was-van-goghs-biggest-secret
 # utter_VG_painting_qty: https://www.vangoghmuseum.nl/en/art-and-stories/vincent-van-gogh-faq/how-many-paintings-did-vincent-sell-during-his-lifetime

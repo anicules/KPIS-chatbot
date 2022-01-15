@@ -117,32 +117,32 @@ rules:
   - intent: VG_friends
   - action: utter_VG_friends
 
-- rule: Answer question anytime a user asks 
+- rule: Answer question anytime a user asks about the painting Starry Night
   steps:
-  - intent:
-  - action: utter_
+  - intent: VG_starry_night
+  - action: utter_VG_starry_night
 
-- rule: Answer question anytime a user asks 
+- rule: Answer question anytime a user asks about the painting Irises
   steps:
-  - intent:
-  - action: utter_
+  - intent: VG_irises
+  - action: utter_VG_irises
 
-- rule: Answer question anytime a user asks 
+- rule: Answer question anytime a user asks about the painting Almond Blossoms
   steps:
-  - intent:
-  - action: utter_
+  - intent: VG_almond_blossoms
+  - action: utter_VG_almond_blossoms
 
-- rule: Answer question anytime a user asks 
+- rule: Answer question anytime a user asks about the painting Bedrom in Arles
   steps:
-  - intent:
-  - action: utter_
+  - intent: VG_bedroom_in_arles
+  - action: utter_VG_bedroom_in_arles
 
-- rule: Answer question anytime a user asks 
+- rule: Answer question anytime a user asks about the painting Cafe Terrace at night
   steps:
-  - intent:
-  - action: utter_
+  - intent: VG_cafe_terrace_at_night
+  - action: utter_VG_cafe_terrace_at_night
 
-- rule: Answer question anytime a user asks 
+- rule: Answer question anytime a user asks about the painting Yellow House
   steps:
-  - intent:
-  - action: utter_
+  - intent: VG_yellow_house
+  - action: utter_VG_yellow_house

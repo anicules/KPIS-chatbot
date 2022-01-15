@@ -192,15 +192,23 @@ nlu:
 
 - intent: VG_info
   examples: |
-    - tell me everything about van gogh
-    - what do you know about van gogh?
-    - information about van gogh
     - fun facts about van gogh?
     - something I don't know about van gogh
     - interesting things about van gogh
-    - facts van gogh
     - van gogh the painter
     - what's so special about van gogh?
+
+- intent: VG_basics
+  examples: |
+    - when was van gogh born?
+    - where was van gogh born?
+    - is vincent van gogh french?
+    - when did van Gogh die?
+    - information about vincent van gogh
+    - tell me about wan gogh
+    - painter van gogh
+    - how many paintings did van gogh make
+    - 
 
 - intent: VG_potato_eaters
   examples: |
@@ -404,7 +412,10 @@ nlu:
 - intent: VG_almond_blossoms
   examples: |
     - almond blossoms van gogh
-    - 
+    - Why did van gogh pain almond blossoms?
+    - tell me about the painting almond blossoms
+    - when was almond blossoms painted?
+    - what does almond blossoms depict
 
 - intent: VG_bedroom_in_arles
   examples: |
@@ -420,10 +431,17 @@ nlu:
 - intent: VG_cafe_terrace_at_night
   examples: |
     - cafe terrace at night vincent van gogh
+    - is the place from cafe terrace at night by van gogh real?
+    - where is the cafe from terrace at night 
+    - tell me about cafe terrace at night
+    - what is so special about cafe terrace at night 
 
 - intent: VG_yellow_house
   examples: |
     - yellow house vincent van gogh
     - did van gogh actually live in a yellow house?
     - where did vincent van gogh live in arles?
-    - 
+    - is the yellow house in the painting by van gogh real?
+    - does the yellow house still exist
+    - what happened to the yellow house
+    - why did van gogh paint yellow house
