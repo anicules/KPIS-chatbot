@@ -14,7 +14,7 @@ intents:
   - VG_basics
   - VG_cut_ear
   - VG_friends
-  - VG_secret
+  - VG_secrets
   - VG_potato_eaters
   - VG_yellow
   - VG_famous_death
@@ -37,7 +37,7 @@ intents:
   - what_happened_to_ibm_pc_business
   - museum_opening_hours
   - exh_info
-  - museum_tickets
+  - ticket_info
 
 responses:
   utter_greet:
@@ -64,6 +64,9 @@ responses:
 
   utter_ask_more_information_VG:
   - text: "Would you like more information about Vincent van Gogh?"
+
+  utter_ask_more_information_VG_secrets:
+  - text: "Would you like to hear some of van Gogh's secrets?"
 
   utter_ask_more_information_Engelbart:
   - text: "Would you like to know more about the creator of the first mouse?"
@@ -125,7 +128,7 @@ responses:
   utter_comp_exh_ibm_pc_business:
   - text: "Over time IBM developed new desktop, then laptop computers. One of the best-known laptop series would be the IBM ThinkPad-series. 24 years after revolutionizing the computer industry, in 2005, and due to financial trouble, IBM sold its PC division to Lenovo, which still sells laptops under the ThinkPad branding. IBM continues to exist, the company mainly produces server and cloud computing solutions."
 
-  utter_VG_secret:
+  utter_VG_secrets:
   - text: "If you read Vincent's letters, he doesn't come across as a man who had big secrets. He was generally open in his correspondence with Theo, although it sometimes took him a while to report his latest news. He waited to tell Theo about his relationship with prostitute Sien Hoornik in The Hague. She was pregnant and had a daughter when Vincent met her. Vincent expressed any grievances he had, and vented how he felt about what was keeping him busy. In 1877, he wrote in a letter to Theo: 'Thanks for coming here yesterday, and do let's carry on having as few secrets as possible. We're brothers, after all'. It would've naturally been quite a scoop to discover that Van Gogh had fathered 16 children on the sly, but we're yet to find any such skeletons in his cupboard."
 
   utter_VG_painting_qty:

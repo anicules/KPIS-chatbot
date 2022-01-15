@@ -333,7 +333,7 @@ nlu:
     - is ibm bankrupt?
     - ibm bankrupcy
 
-- intent: VG_secret
+- intent: VG_secrets
   examples: |
     - What Was Van Goghs Biggest Secret?
     - his biggest secret

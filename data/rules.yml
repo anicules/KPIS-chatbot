@@ -60,7 +60,7 @@ rules:
 - rule: Answer question anytime a user asks about the IBM PC
   steps:
   - intent: comp_exh_ibm_pc
-  - action: utter_comp_exh_ibm_bc
+  - action: utter_comp_exh_ibm_pc
 
 - rule: Answer question anytime a user asks about that happened to IBM
   steps:
