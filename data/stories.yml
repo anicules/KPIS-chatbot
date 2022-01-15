@@ -42,8 +42,8 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: museum_opening_hours
-  - action: utter_museum_opeing_hours
+  - intent: ticket_info
+  - action: utter_ticket_info
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_thanks
@@ -260,7 +260,7 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: VG_self_portrait_1889
-  - action: utter_VG_self_potrait_1889
+  - action: utter_VG_self_portrait_1889
   - action: utter_ask_more_information_VG
   - intent: deny
   - action: utter_deny_help
@@ -270,7 +270,7 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: VG_irises
-  - action: utter_irises
+  - action: utter_VG_irises
   - action: utter_ask_more_information_VG
   - intent: affirm
   - action: utter_more_information_VG
@@ -390,7 +390,7 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: comp_exh_xerox_alto
-  - action: utter_xerox_alto
+  - action: utter_comp_exh_xerox_alto
 
 - story: provide information about the Apple Macintosh 128k (exh)
   steps:

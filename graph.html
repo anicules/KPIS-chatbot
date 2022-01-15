@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rasa Core Visualisation</title>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre/latest/dagre.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://dagrejs.github.io/project/graphlib-dot/v0.6.3/graphlib-dot.js"></script>
+</head>
+<body>
+<div id="errormsg" style="color: #b00"></div>
+<svg>
+    <style id="graph-style">
+        .node.invisible > rect {
+            display: none;
+        }
+
+        .node.start > rect {
+            fill: #7f7;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node.end > rect {
+            fill: #f77;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node:not(.active) > rect, .node:not(.active) > .label {
+            opacity: 0.4;
+        }
+
+        .edgePath:not(.active) path {
+            opacity: 0.4;
+        }
+
+        .node.ellipsis > rect {
+            fill: #CCC;
+        }
+
+        .node.intent > rect {
+            fill: #7ff;
+        }
+
+        .node.dashed > rect {
+            stroke-dasharray: 5;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf, serif;
+            font-size: 14px;
+            color: #1f1d1d;
+        }
+
+        .node rect {
+            stroke: #444;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        svg {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 100%
+        }
+    </style>
+    <g></g>
+</svg>
+<script>
+
+  function serveGraph() {
+    let oldInputGraphValue;
+
+    const url = 'visualization.dot';
+    const refreshInterval = 500;
+
+    // trigger a refresh by fetching an updated graph
+    setInterval(function () {
+      fetch(url).then(r => r.text()).then(dot => {
+        document.getElementById('errormsg').innerHTML = '';
+        if (oldInputGraphValue === dot) return;
+
+        oldInputGraphValue = dot;
+        drawGraph(dot);
+      }).catch(err => {
+        document.getElementById('errormsg').innerHTML =
+          'Failed to update plot. (' + err.message + ')';
+      });
+    }, refreshInterval);
+  }
+
+  function drawGraph(graph) {
+    let g = graphlibDot.read(graph);
+    // Set margins, if not present
+    if (!g.graph().hasOwnProperty("marginx") &&
+      !g.graph().hasOwnProperty("marginy")) {
+      g.graph().marginx = 20;
+      g.graph().marginy = 20;
+    }
+    g.graph().transition = function (selection) {
+      return selection.transition().duration(300);
+    };
+    // Render the graph into svg g
+    d3.select("svg g").call(render, g);
+  }
+  // Set up zoom support
+  const svg = d3.select("svg"),
+    inner = d3.select("svg g"),
+    zoom = d3.zoom().on("zoom", function () {
+      inner.attr("transform", d3.event.transform);
+    });
+  svg.call(zoom);
+
+  // Create and configure the renderer
+  const render = dagreD3.render();
+
+  let isClient = false;
+  isClient = true;
+
+  if (isClient) {
+    // Mark all nodes and their edges as active
+    cssRules = document.getElementById('graph-style').sheet.cssRules;
+    cssRules[3].style.opacity = 1;
+    cssRules[4].style.opacity = 1;
+
+    let graph;
+    graph = `digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=utter_greet];
+2 [class="", fontsize=12, label=utter_happy];
+4 [class="", fontsize=12, label=utter_cheer_up];
+5 [class="", fontsize=12, label=utter_did_that_help];
+10 [class="", fontsize=12, label=utter_goodbye];
+12 [class="", fontsize=12, label=utter_happy];
+13 [class="", fontsize=12, label=utter_iamabot];
+15 [class="", fontsize=12, label=utter_ticket_info];
+16 [class="", fontsize=12, label=utter_did_that_help];
+17 [class="", fontsize=12, label=utter_thanks];
+19 [class="", fontsize=12, label=utter_museum_opening_hours];
+23 [class="", fontsize=12, label=utter_exh_info];
+27 [class="", fontsize=12, label=utter_VG_basics];
+28 [class="", fontsize=12, label=utter_more_information_VG];
+29 [class="", fontsize=12, label=utter_VG_cut_ear];
+30 [class="", fontsize=12, label=utter_VG_hand];
+31 [class="", fontsize=12, label=utter_VG_yellow];
+32 [class="", fontsize=12, label=utter_VG_friends];
+33 [class="", fontsize=12, label=utter_VG_suicide];
+34 [class="", fontsize=12, label=utter_VG_Theo_death];
+35 [class="", fontsize=12, label=utter_VG_famous_death];
+36 [class="", fontsize=12, label=utter_ask_more_information_VG_secrets];
+37 [class="", fontsize=12, label=utter_VG_secrets];
+41 [class="", fontsize=12, label=utter_deny_help];
+55 [class="", fontsize=12, label=utter_VG_cut_ear];
+56 [class="", fontsize=12, label=utter_ask_more_information_VG];
+57 [class="", fontsize=12, label=utter_more_information_VG];
+63 [class="", fontsize=12, label=utter_VG_yellow];
+71 [class="", fontsize=12, label=utter_VG_famous_death];
+73 [class="", fontsize=12, label=utter_VG_suicide];
+77 [class="", fontsize=12, label=utter_VG_painting_qty];
+79 [class="", fontsize=12, label=utter_VG_hand];
+81 [class="", fontsize=12, label=utter_VG_Theo_death];
+83 [class="", fontsize=12, label=utter_VG_friends];
+85 [class="", fontsize=12, label=utter_VG_potato_eaters];
+93 [class="", fontsize=12, label=utter_VG_starry_night];
+101 [class="", fontsize=12, label=utter_VG_self_portrait_1889];
+109 [class="", fontsize=12, label=utter_VG_irises];
+117 [class="", fontsize=12, label=utter_VG_almond_blossoms];
+125 [class="", fontsize=12, label=utter_VG_bedroom_in_arles];
+133 [class="", fontsize=12, label=utter_VG_cafe_terrace_at_night];
+141 [class="", fontsize=12, label=utter_VG_yellow_house];
+149 [class="", fontsize=12, label=utter_comp_exh_first_mouse];
+150 [class="", fontsize=12, label=utter_ask_more_information_Engelbart];
+151 [class="", fontsize=12, label=utter_comp_exh_first_mouse_Engelbart];
+157 [class="", fontsize=12, label=utter_comp_exh_xerox_alto];
+159 [class="", fontsize=12, label=utter_comp_exh_apple_macintosh];
+161 [class="", fontsize=12, label=utter_comp_exh_ibm_pc];
+162 [class="", fontsize=12, label=utter_ask_more_information_IBM_business];
+163 [class="", fontsize=12, label=utter_comp_exh_ibm_pc_business];
+171 [class="", fontsize=12, label="..."];
+182 [class="", fontsize=12, label=utter_greet];
+199 [class=intent, fillcolor=lightblue, label=hi, shape=rect, style=filled];
+200 [class=intent, fillcolor=lightblue, label="so perfect", shape=rect, style=filled];
+201 [class=intent, fillcolor=lightblue, label="not very good", shape=rect, style=filled];
+202 [class=intent, fillcolor=lightblue, label="feeling like a king", shape=rect, style=filled];
+203 [class=intent, fillcolor=lightblue, label="is the museum free of charge?", shape=rect, style=filled];
+204 [class=intent, fillcolor=lightblue, label="is the museum closed on wednesday?", shape=rect, style=filled];
+205 [class=intent, fillcolor=lightblue, label="is there any special exhibition?", shape=rect, style=filled];
+206 [class=intent, fillcolor=lightblue, label="where was van gogh born?", shape=rect, style=filled];
+207 [class=intent, fillcolor=lightblue, label="did van gogh cut his hear?", shape=rect, style=filled];
+208 [class=intent, fillcolor=lightblue, label="Why is yellow so prominent in Van Gogh's paintings?", shape=rect, style=filled];
+209 [class=intent, fillcolor=lightblue, label="Why did Van Gogh become famouse after his death?", shape=rect, style=filled];
+210 [class=intent, fillcolor=lightblue, label="suicide van gogh", shape=rect, style=filled];
+211 [class=intent, fillcolor=lightblue, label="Who was the first one that bought Van Goghs painting?", shape=rect, style=filled];
+212 [class=intent, fillcolor=lightblue, label="How do you know that he was right-handed?", shape=rect, style=filled];
+213 [class=intent, fillcolor=lightblue, label="When did Theo die?", shape=rect, style=filled];
+214 [class=intent, fillcolor=lightblue, label="Did he have any friends?", shape=rect, style=filled];
+215 [class=intent, fillcolor=lightblue, label="Why are figures sitting down in potato eaters?", shape=rect, style=filled];
+216 [class=intent, fillcolor=lightblue, label="tell me about starry night", shape=rect, style=filled];
+217 [class=intent, fillcolor=lightblue, label="was this the last self portrait of van gogh?", shape=rect, style=filled];
+218 [class=intent, fillcolor=lightblue, label="when did vincent van gogh paint irises?", shape=rect, style=filled];
+219 [class=intent, fillcolor=lightblue, label="what does almond blossoms depict", shape=rect, style=filled];
+220 [class=intent, fillcolor=lightblue, label="bedroom in arles vincent van gogh", shape=rect, style=filled];
+221 [class=intent, fillcolor=lightblue, label="what is so special about cafe terrace at night", shape=rect, style=filled];
+222 [class=intent, fillcolor=lightblue, label="does the yellow house still exist", shape=rect, style=filled];
+223 [class=intent, fillcolor=lightblue, label="tell me about the mouse", shape=rect, style=filled];
+224 [class=intent, fillcolor=lightblue, label="was the xerox alto the first pc?", shape=rect, style=filled];
+225 [class=intent, fillcolor=lightblue, label="was the macintosh successful?", shape=rect, style=filled];
+226 [class=intent, fillcolor=lightblue, label="how did ibm revolutionize the computing industry?", shape=rect, style=filled];
+227 [class=intent, fillcolor=lightblue, label="To whom did Van Gogh tell his secrets?", shape=rect, style=filled];
+228 [class=intent, fillcolor=lightblue, label=da, shape=rect, style=filled];
+229 [class=intent, fillcolor=lightblue, label="don't like that", shape=rect, style=filled];
+230 [class=intent, fillcolor=lightblue, label="am I talking to a bot?", shape=rect, style=filled];
+231 [class=intent, fillcolor=lightblue, label="of course", shape=rect, style=filled];
+232 [class=intent, fillcolor=lightblue, label=indeed, shape=rect, style=filled];
+233 [class=intent, fillcolor=lightblue, label="I don't think so", shape=rect, style=filled];
+234 [class=intent, fillcolor=lightblue, label=da, shape=rect, style=filled];
+235 [class=intent, fillcolor=lightblue, label="not really", shape=rect, style=filled];
+236 [class=intent, fillcolor=lightblue, label=correct, shape=rect, style=filled];
+237 [class=intent, fillcolor=lightblue, label="don't like that", shape=rect, style=filled];
+238 [class=intent, fillcolor=lightblue, label="that sounds good", shape=rect, style=filled];
+239 [class=intent, fillcolor=lightblue, label=no, shape=rect, style=filled];
+240 [class=intent, fillcolor=lightblue, label="is ibm bankrupt?", shape=rect, style=filled];
+241 [class=intent, fillcolor=lightblue, label=y, shape=rect, style=filled];
+242 [class=intent, fillcolor=lightblue, label=nein, shape=rect, style=filled];
+243 [class=intent, fillcolor=lightblue, label="To whom did Van Gogh tell his secrets?", shape=rect, style=filled];
+244 [class=intent, fillcolor=lightblue, label="How Van Gogh did sell his paintings?", shape=rect, style=filled];
+245 [class=intent, fillcolor=lightblue, label="Why was Van Gogh right-handed?", shape=rect, style=filled];
+246 [class=intent, fillcolor=lightblue, label="When did Theo die?", shape=rect, style=filled];
+247 [class=intent, fillcolor=lightblue, label="How many friends did Van Gogh have?", shape=rect, style=filled];
+248 [class=intent, fillcolor=lightblue, label=goodmorning, shape=rect, style=filled];
+249 [class=intent, fillcolor=lightblue, label="bis dann", shape=rect, style=filled];
+250 [class=intent, fillcolor=lightblue, label="are you a human?", shape=rect, style=filled];
+251 [class=intent, fillcolor=lightblue, label="that information was good", shape=rect, style=filled];
+252 [class=intent, fillcolor=lightblue, label="Did Xerox make PCs?", shape=rect, style=filled];
+253 [class=intent, fillcolor=lightblue, label="what is so special about the macintosh?", shape=rect, style=filled];
+254 [class=intent, fillcolor=lightblue, label="ibm failure", shape=rect, style=filled];
+255 [class=intent, fillcolor=lightblue, label="How Did Vincent van Gogh Become Famous after His Death?", shape=rect, style=filled];
+256 [class=intent, fillcolor=lightblue, label="Why did Van Gogh try to kill himself?", shape=rect, style=filled];
+0 -> 171  [class="", key=NONE, label=""];
+0 -> 199  [class="", key=0];
+1 -> 200  [class="", key=0];
+1 -> 201  [class="", key=0];
+1 -> 202  [class="", key=0];
+1 -> 203  [class="", key=0];
+1 -> 204  [class="", key=0];
+1 -> 205  [class="", key=0];
+1 -> 206  [class="", key=0];
+1 -> 207  [class="", key=0];
+1 -> 208  [class="", key=0];
+1 -> 209  [class="", key=0];
+1 -> 210  [class="", key=0];
+1 -> 211  [class="", key=0];
+1 -> 212  [class="", key=0];
+1 -> 213  [class="", key=0];
+1 -> 214  [class="", key=0];
+1 -> 215  [class="", key=0];
+1 -> 216  [class="", key=0];
+1 -> 217  [class="", key=0];
+1 -> 218  [class="", key=0];
+1 -> 219  [class="", key=0];
+1 -> 220  [class="", key=0];
+1 -> 221  [class="", key=0];
+1 -> 222  [class="", key=0];
+1 -> 223  [class="", key=0];
+1 -> 224  [class="", key=0];
+1 -> 225  [class="", key=0];
+1 -> 226  [class="", key=0];
+1 -> 227  [class="", key=0];
+2 -> "-1"  [class="", key=NONE, label=""];
+4 -> 5  [class="", key=NONE, label=""];
+5 -> 228  [class="", key=0];
+5 -> 229  [class="", key=0];
+10 -> "-1"  [class="", key=NONE, label=""];
+12 -> 230  [class="", key=0];
+13 -> "-1"  [class="", key=NONE, label=""];
+15 -> 16  [class="", key=NONE, label=""];
+16 -> 231  [class="", key=0];
+17 -> "-1"  [class="", key=NONE, label=""];
+19 -> 16  [class="", key=NONE, label=""];
+23 -> 16  [class="", key=NONE, label=""];
+27 -> 28  [class="", key=NONE, label=""];
+28 -> 232  [class="", key=0];
+28 -> 233  [class="", key=0];
+29 -> 30  [class="", key=NONE, label=""];
+30 -> 31  [class="", key=NONE, label=""];
+31 -> 32  [class="", key=NONE, label=""];
+32 -> 33  [class="", key=NONE, label=""];
+33 -> 34  [class="", key=NONE, label=""];
+34 -> 35  [class="", key=NONE, label=""];
+35 -> 36  [class="", key=NONE, label=""];
+36 -> 234  [class="", key=0];
+36 -> 235  [class="", key=0];
+37 -> "-1"  [class="", key=NONE, label=""];
+41 -> "-1"  [class="", key=NONE, label=""];
+55 -> 56  [class="", key=NONE, label=""];
+56 -> 236  [class="", key=0];
+56 -> 237  [class="", key=0];
+57 -> "-1"  [class="", key=NONE, label=""];
+63 -> 56  [class="", key=NONE, label=""];
+71 -> "-1"  [class="", key=NONE, label=""];
+73 -> "-1"  [class="", key=NONE, label=""];
+77 -> "-1"  [class="", key=NONE, label=""];
+79 -> "-1"  [class="", key=NONE, label=""];
+81 -> "-1"  [class="", key=NONE, label=""];
+83 -> "-1"  [class="", key=NONE, label=""];
+85 -> 56  [class="", key=NONE, label=""];
+93 -> 56  [class="", key=NONE, label=""];
+101 -> 56  [class="", key=NONE, label=""];
+109 -> 56  [class="", key=NONE, label=""];
+117 -> 56  [class="", key=NONE, label=""];
+125 -> 56  [class="", key=NONE, label=""];
+133 -> 56  [class="", key=NONE, label=""];
+141 -> 56  [class="", key=NONE, label=""];
+149 -> 150  [class="", key=NONE, label=""];
+150 -> 238  [class="", key=0];
+150 -> 239  [class="", key=0];
+151 -> "-1"  [class="", key=NONE, label=""];
+157 -> "-1"  [class="", key=NONE, label=""];
+159 -> "-1"  [class="", key=NONE, label=""];
+161 -> 162  [class="", key=NONE, label=""];
+161 -> 240  [class="", key=0];
+162 -> 241  [class="", key=0];
+162 -> 242  [class="", key=0];
+163 -> "-1"  [class="", key=NONE, label=""];
+171 -> 243  [class="", key=0];
+171 -> 244  [class="", key=0];
+171 -> 245  [class="", key=0];
+171 -> 246  [class="", key=0];
+171 -> 247  [class="", key=0];
+171 -> 248  [class="", key=0];
+171 -> 249  [class="", key=0];
+171 -> 250  [class="", key=0];
+171 -> 251  [class="", key=0];
+171 -> 252  [class="", key=0];
+171 -> 253  [class="", key=0];
+171 -> 254  [class="", key=0];
+171 -> 255  [class="", key=0];
+171 -> 256  [class="", key=0];
+182 -> "-1"  [class="", key=NONE, label=""];
+199 -> 1  [class="", key=0];
+200 -> 2  [class="", key=0];
+201 -> 4  [class="", key=0];
+202 -> 12  [class="", key=0];
+203 -> 15  [class="", key=0];
+204 -> 19  [class="", key=0];
+205 -> 23  [class="", key=0];
+206 -> 27  [class="", key=0];
+207 -> 55  [class="", key=0];
+208 -> 63  [class="", key=0];
+209 -> 71  [class="", key=0];
+210 -> 73  [class="", key=0];
+211 -> 77  [class="", key=0];
+212 -> 79  [class="", key=0];
+213 -> 81  [class="", key=0];
+214 -> 83  [class="", key=0];
+215 -> 85  [class="", key=0];
+216 -> 93  [class="", key=0];
+217 -> 101  [class="", key=0];
+218 -> 109  [class="", key=0];
+219 -> 117  [class="", key=0];
+220 -> 125  [class="", key=0];
+221 -> 133  [class="", key=0];
+222 -> 141  [class="", key=0];
+223 -> 149  [class="", key=0];
+224 -> 157  [class="", key=0];
+225 -> 159  [class="", key=0];
+226 -> 161  [class="", key=0];
+227 -> 37  [class="", key=0];
+228 -> 2  [class="", key=0];
+229 -> 10  [class="", key=0];
+230 -> 13  [class="", key=0];
+231 -> 17  [class="", key=0];
+232 -> 29  [class="", key=0];
+233 -> 41  [class="", key=0];
+234 -> 37  [class="", key=0];
+235 -> 41  [class="", key=0];
+236 -> 57  [class="", key=0];
+237 -> 41  [class="", key=0];
+238 -> 151  [class="", key=0];
+239 -> 41  [class="", key=0];
+240 -> 163  [class="", key=0];
+241 -> 163  [class="", key=0];
+242 -> 41  [class="", key=0];
+243 -> 37  [class="", key=0];
+244 -> 77  [class="", key=0];
+245 -> 79  [class="", key=0];
+246 -> 81  [class="", key=0];
+247 -> 83  [class="", key=0];
+248 -> 182  [class="", key=0];
+249 -> 10  [class="", key=0];
+250 -> 13  [class="", key=0];
+251 -> 17  [class="", key=0];
+252 -> 157  [class="", key=0];
+253 -> 159  [class="", key=0];
+254 -> 163  [class="", key=0];
+255 -> 71  [class="", key=0];
+256 -> 73  [class="", key=0];
+}
+`;
+    drawGraph(graph);
+  } else {
+    serveGraph();
+  }
+
+
+</script>
+</body>
+</html>

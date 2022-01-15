@@ -22,31 +22,6 @@ rules:
   - intent: thanks
   - action: utter_thanks
 
-- rule: Answer question anytime a user asks about ticket prices
-  steps:
-  - intent: ticket_info
-  - action: utter_ticket_info
-
-- rule: Answer question anytime a user asks about museum opening hours
-  steps:
-  - intent: museum_opening_hours
-  - action: utter_museum_opening_hours
-
-- rule: Answer question anytime a user asks about the special exhibition
-  steps:
-  - intent: exh_info
-  - action: utter_exh_info
-
-- rule: Answer question anytime a user asks about the first mouse
-  steps:
-  - intent: comp_exh_first_mouse
-  - action: utter_comp_exh_first_mouse
-
-- rule: Answer question anytime a user asks about Engelbart, who designed the first mouse
-  steps:
-  - intent: comp_exh_first_mouse_Engelbart
-  - action: utter_comp_exh_first_mouse_Engelbart
-
 - rule: Answer question anytime a user asks about the Xerox Alto
   steps:
   - intent: comp_exh_xerox_alto
@@ -57,30 +32,10 @@ rules:
   - intent: comp_exh_apple_macintosh
   - action: utter_comp_exh_apple_macintosh
 
-- rule: Answer question anytime a user asks about the IBM PC
-  steps:
-  - intent: comp_exh_ibm_pc
-  - action: utter_comp_exh_ibm_pc
-
 - rule: Answer question anytime a user asks about that happened to IBM
   steps:
   - intent: what_happened_to_ibm_pc_business
-  - action: utter_what_happened_to_ibm_pc_business
-
-- rule: Answer question anytime a user asks about VG's cut ear
-  steps:
-  - intent: VG_cut_ear
-  - action: utter_VG_cut_ear
-
-- rule: Answer question anytime a user asks about the potato eaters painting
-  steps:
-  - intent: VG_potato_eaters
-  - action: utter_VG_potato_eaters
-
-- rule: Answer question anytime a user asks about VG's favourite color
-  steps:
-  - intent: VG_yellow
-  - action: utter_VG_yellow
+  - action: utter_comp_exh_ibm_pc_business
 
 - rule: Answer question anytime a user asks about the death of VG
   steps:
@@ -116,33 +71,3 @@ rules:
   steps:
   - intent: VG_friends
   - action: utter_VG_friends
-
-- rule: Answer question anytime a user asks about the painting Starry Night
-  steps:
-  - intent: VG_starry_night
-  - action: utter_VG_starry_night
-
-- rule: Answer question anytime a user asks about the painting Irises
-  steps:
-  - intent: VG_irises
-  - action: utter_VG_irises
-
-- rule: Answer question anytime a user asks about the painting Almond Blossoms
-  steps:
-  - intent: VG_almond_blossoms
-  - action: utter_VG_almond_blossoms
-
-- rule: Answer question anytime a user asks about the painting Bedrom in Arles
-  steps:
-  - intent: VG_bedroom_in_arles
-  - action: utter_VG_bedroom_in_arles
-
-- rule: Answer question anytime a user asks about the painting Cafe Terrace at night
-  steps:
-  - intent: VG_cafe_terrace_at_night
-  - action: utter_VG_cafe_terrace_at_night
-
-- rule: Answer question anytime a user asks about the painting Yellow House
-  steps:
-  - intent: VG_yellow_house
-  - action: utter_VG_yellow_house
